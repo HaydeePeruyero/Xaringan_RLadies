@@ -7,6 +7,7 @@
 
 - Presentaciones revealjs
 - Presentaciones Xaringan
+- Recomendación para hacer diagramas complicados
 - Documentos de RMarkdown
 - 
 
