@@ -4,6 +4,8 @@
 
 [Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
 
+Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
+
 
 - Presentaciones revealjs
 - Presentaciones Xaringan
