@@ -9,7 +9,7 @@
 - Presentaciones Xaringan
 - Recomendación para hacer diagramas complicados
 - Documentos de RMarkdown
-- 
+- CSS y HTML
 
 # Trabajo colaborativo
 
