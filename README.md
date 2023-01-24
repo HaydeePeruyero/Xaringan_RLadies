@@ -5,6 +5,10 @@
 [Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
 
 
+- Presentaciones revealjs
+- Presentaciones Xaringan
+- Documentos de RMarkdown
+- 
 
 # Trabajo colaborativo
 
