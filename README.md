@@ -2,5 +2,5 @@
 
 [Link](https://bookdown.org/yihui/rmarkdown/xaringan.html)
 
-[Rmarkdown con Latex](Rmarkdown_and_LaTeX)
+[Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
 
