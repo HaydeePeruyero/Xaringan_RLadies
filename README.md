@@ -7,7 +7,7 @@
 Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
 
 
-- Presentaciones revealjs
+- Presentaciones [revealjs](https://quarto.org/docs/presentations/revealjs/)
 - Presentaciones Xaringan
 - Recomendación para hacer diagramas complicados
 - Documentos de RMarkdown
