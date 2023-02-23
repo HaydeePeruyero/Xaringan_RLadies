@@ -13,6 +13,32 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
 - Documentos de RMarkdown
 - CSS y HTML
 
+### Temas (propuesta)
+
+- Objetivos de la charla 
+- ¿Historia (breve) desarrollo Xaringan?, ¿reveal js con Quarto? ¿Qué es Rmarkdown o qué es Quarto?
+- Instalación - clonar repositorio
+
+**Xaringan**
+- Formato de diapositivas
+  - Diapositiva de titulo 
+  - Diapositivas graduales 
+- Clases CSS (para diapositivas en general y para dar formato a partes de la diapositiva)
+  - Clases pre-incluidas
+  - Propiedades útiles para presentaciones (tamaños de imagen, posición, color de texto,)
+  - Como añadir css al documento 
+- Ejercicios (columnas, tamaños de texto, poner imágenes, etc.)
+- Temas preconfigurados que se pueden elegir
+- Como hacer notas de presentador
+- Como presentar (una vez que ya está el documento html)
+  - shortcuts, presenter view, etc. 
+- Documentos autocontenidos 
+
+**Quarto reveal js**
+- Seguir capítulo de [revealjs](https://quarto.org/docs/presentations/revealjs/)
+- Solo presentar las cosas que sean diferentes entre los paquetes.
+
+
 # Trabajo colaborativo
 
 ### Pasos a seguir
