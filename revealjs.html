@@ -429,9 +429,6 @@ Haydee, Fernanda, Ximena, Sofía
 <span id="cb1-18"><a href="#cb1-18"></a></span>
 <span id="cb1-19"><a href="#cb1-19"></a><span class="sc">-</span> Contenido <span class="dv">1</span> </span>
 <span id="cb1-20"><a href="#cb1-20"></a><span class="sc">-</span> Contenido <span class="dv">2</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Reveal js Quarto</p>
-</div>
 </section>
 <section id="diapositivas-graduales" class="slide level2">
 <h2>Diapositivas graduales</h2>
@@ -535,12 +532,114 @@ Haydee, Fernanda, Ximena, Sofía
 </ul>
 </div>
 
-<div class="footer footer-default">
-
-</div>
 <aside><div>
 <p>Nota inferior</p>
 </div><ol class="aside-footnotes"><li id="fn1"><p>Rladies et al., 2023</p></li></ol></aside></section>
+<section id="temas" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Temas</h2>
+<p><br></p>
+<div>
+<ul>
+<li><a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes">repositorio de css</a></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="sc">---</span></span>
+<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>title<span class="sc">:</span> <span class="st">"Presentation"</span></span>
+<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>format<span class="sc">:</span></span>
+<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>  revealjs<span class="sc">:</span> </span>
+<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a>    theme<span class="sc">:</span> dark</span>
+<span id="cb6-6" class="hljs-ln-code"><a href="#cb6-6"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="temas-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Temas</h2>
+<p><br></p>
+<div>
+<ul>
+<li><a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes">repositorio de css</a></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="sc">---</span></span>
+<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>title<span class="sc">:</span> <span class="st">"Presentation"</span></span>
+<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>format<span class="sc">:</span></span>
+<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  revealjs<span class="sc">:</span> </span>
+<span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a>    theme<span class="sc">:</span> [default, custom.scss]</span>
+<span id="cb7-6" class="hljs-ln-code"><a href="#cb7-6"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="cambios-personalizados-en-los-temas" class="slide level2">
+<h2>Cambios personalizados en los temas</h2>
+<div>
+<div style="font-size: 30px">
+<ul>
+<li>Los archivos que definen los temas son de tipo <a href="https://sass-lang.com/documentation/">Sass</a> que es un pre-procesador de CSS y le da algunas capacidades de un lenguaje de programación (variables, reglas anidadas, funciones, etc.)
+<ul>
+<li><a href="https://es.wikipedia.org/wiki/Sass">Wikipedia: ilustra las diferencias con CSS</a></li>
+</ul></li>
+</ul>
+</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a>$body-bg<span class="in">: #191919;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>$body-color<span class="in">: #fff</span>;</span>
+<span id="cb8-5"><a href="#cb8-5"></a>$link-color<span class="in">: #42affa;</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="co">/*-- scss:rules --*/</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="fu">.reveal</span> <span class="fu">.slide</span> blockquote {</span>
+<span id="cb8-10"><a href="#cb8-10"></a>  <span class="kw">border-left</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> $text-muted<span class="op">;</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a>  <span class="kw">padding-left</span>: <span class="dv">0.5</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb8-12"><a href="#cb8-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div style="font-size: 30px">
+<ul>
+<li><a href="https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables">Lista</a> de variables que se pueden modificar</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="css-en-la-presentación" class="slide level2">
+<h2>CSS en la presentación</h2>
+<div>
+<ul>
+<li>Algunos estilos específicos se pueden indicar directamente en las diaposivas</li>
+<li>CSS - lenguaje para dar estilo a documentos HTML (cómo es que se deben mostrar los elementos del HTML)<sup>1</sup></li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="sc">:::</span>{style<span class="ot">=</span><span class="st">"font-size: 40px; color:Tomato"</span>}</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="sc">-</span> Ejemplo </span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="sc">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div style="font-size: 40px; color:Tomato">
+<ul>
+<li class="fragment">Ejemplo</li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.w3schools.com/css/default.asp">W3Schools</a></p></li></ol></aside></section>
+<section id="diagramas-y-figuras" class="slide level2">
+<h2>Diagramas y figuras</h2>
+<div style="font-size: 30px">
+<ul>
+<li>Dependiendo del área (y el estilo de cada quién) hay algunas figuras (mapas mentales, diagramas de flujo, explicaciones conceptuales) que son más fáciles de hacer manualmente. Las figuras se pueden añadir como svg, png, jpg a la presentación.</li>
+</ul>
+</div>
+<div class="columns">
+<div class="column" style="font-size: 30px">
+<p><strong>Recursos libres</strong></p>
+<ul>
+<li class="fragment"><a href="https://www.biorender.com/">Biorender</a> - más o menos libre</li>
+<li class="fragment"><a href="https://bioicons.com/">Bioicons</a></li>
+<li class="fragment"><a href="https://app.diagrams.net/">Drawio</a></li>
+<li class="fragment"><a href="https://inkscape.org/es/">Inkscape</a></li>
+</ul>
+</div><div class="column" style="font-size: 30px">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="imagenes/example.png"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer footer-default">
+<p>Reveal js Quarto</p>
+</div>
+</section>
 
     </div>
   </div>
@@ -753,6 +852,44 @@ Haydee, Fernanda, Ximena, Sofía
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

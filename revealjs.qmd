@@ -7,6 +7,7 @@ format:
         slide-number: c
         show-slide-number: all
         scrollable: true
+        footer: "Reveal js Quarto"
         menu: 
             side: right
 ---
@@ -42,9 +43,6 @@ format:
 - Contenido 2 
 
 ```
-:::{.footer}
-Reveal js Quarto
-:::
 
 ## Diapositivas graduales 
 
@@ -157,3 +155,112 @@ Nota inferior
 ::: aside
 Nota inferior
 :::
+
+
+## Temas {auto-animate="true"}
+
+<br>
+
+:::{.nonincremental}
+- [repositorio de css](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes)
+
+
+```r
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: dark
+---
+```
+:::
+
+## Temas {auto-animate="true"}
+
+<br>
+
+:::{.nonincremental}
+- [repositorio de css](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes)
+
+
+```r 
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: [default, custom.scss]
+---
+```
+:::
+## Cambios personalizados en los temas
+
+:::{.nonincremental}
+:::{style="font-size: 30px"}
+
+- Los archivos que definen los temas son de tipo [Sass](https://sass-lang.com/documentation/) que es un pre-procesador de CSS y le da algunas capacidades de un lenguaje de programación (variables, reglas anidadas, funciones, etc.)
+    - [Wikipedia: ilustra las diferencias con CSS](https://es.wikipedia.org/wiki/Sass)
+
+:::
+```css
+/*-- scss:defaults --*/
+
+$body-bg: #191919;
+$body-color: #fff;
+$link-color: #42affa;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+```
+:::{style="font-size: 30px"}
+- [Lista](https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables) de variables que se pueden modificar
+:::
+:::
+
+## CSS en la presentación 
+:::{.nonincremental}
+
+- Algunos estilos específicos se pueden indicar directamente en las diaposivas
+- CSS - lenguaje para dar estilo a documentos HTML (cómo es que se deben mostrar los elementos del HTML)^[[W3Schools](https://www.w3schools.com/css/default.asp)]
+
+```r
+:::{style="font-size: 40px; color:Tomato"}
+- Ejemplo 
+:::
+```
+:::
+
+:::{style="font-size: 40px; color:Tomato"}
+- Ejemplo 
+:::
+
+## Diagramas y figuras 
+
+:::{.nonincremental style="font-size: 30px"}
+- Dependiendo del área (y el estilo de cada quién) hay algunas figuras (mapas mentales, diagramas de flujo, explicaciones conceptuales) que son más fáciles de hacer manualmente. Las figuras se pueden añadir como svg, png, jpg a la presentación.
+:::
+
+::::{.columns}
+::: {.column width="20%" style="font-size: 30px"}
+
+**Recursos libres**
+
+- [Biorender](https://www.biorender.com/) - más o menos libre
+- [Bioicons](https://bioicons.com/)
+- [Drawio](https://app.diagrams.net/)
+- [Inkscape](https://inkscape.org/es/)
+
+:::
+
+::: {.column width="80%" style="font-size: 30px"}
+
+```{r}
+knitr::include_graphics("imagenes/example.png")
+```
+:::
+
+::::
