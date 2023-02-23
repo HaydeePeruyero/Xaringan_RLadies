@@ -103,3 +103,57 @@ Derecha
 
 ::::
 
+## `{.smaller}`
+
+:::{.nonincremental}
+- Opciones cambiar el tamaño del texto de toda la diapositiva 
+
+
+```{.r code-line-numbers="1-6|8"}
+---
+title: "Título"
+format: 
+    revealjs:
+        smaller: true
+---
+
+## Titulo diapositiva {.smaller}
+```
+:::
+
+## Ejemplo (grande) 
+
+- Contenido 1
+- Contenido 2
+
+## Ejemplo (pequeño) {.smaller} 
+
+- Contenido 1
+- Contenido 2
+
+## Notas y pies de página {.smaller}
+
+```{.r}
+## Título de la diapositiva
+
+- Contenido 1 ^[Rladies et al., 2023]
+- Contenido 2
+
+:::{.notes}
+Buenos días mi nombre es ....
+:::
+
+::: aside
+Nota inferior
+:::
+
+```
+<br>
+
+:::{.nonincremental}
+- Contenido 1 ^[Rladies et al., 2023]
+- Contenido 2
+:::
+::: aside
+Nota inferior
+:::
