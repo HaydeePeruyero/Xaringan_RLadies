@@ -19,7 +19,8 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
 - ¿Historia (breve) desarrollo Xaringan?, ¿reveal js con Quarto? ¿Qué es Rmarkdown o qué es Quarto?
 - Instalación - clonar repositorio
 
-**Xaringan**
+**Xaringan y Quarto js**
+
 - Formato de diapositivas
   - Diapositiva de titulo 
   - Diapositivas graduales 
@@ -34,8 +35,8 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
   - shortcuts, presenter view, etc. 
 - Documentos autocontenidos 
 
-**Quarto reveal js**
-- Seguir capítulo de [revealjs](https://quarto.org/docs/presentations/revealjs/)
+- Para el paquete de Quarto seguir capítulo de [revealjs](https://quarto.org/docs/presentations/revealjs/)
+- Para Xaringan seguir [capitulo](https://bookdown.org/yihui/rmarkdown/xaringan.html) 
 - Solo presentar las cosas que sean diferentes entre los paquetes.
 
 
