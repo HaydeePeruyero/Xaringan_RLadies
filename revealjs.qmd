@@ -119,12 +119,12 @@ format:
 ```
 :::
 
-## Ejemplo (grande) 
+## Ejemplo (texto grande) 
 
 - Contenido 1
 - Contenido 2
 
-## Ejemplo (pequeño) {.smaller} 
+## Ejemplo (texto pequeño) {.smaller} 
 
 - Contenido 1
 - Contenido 2
