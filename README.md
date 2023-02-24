@@ -34,11 +34,12 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
 - Como presentar (una vez que ya está el documento html)
   - shortcuts, presenter view, etc. 
 - Documentos autocontenidos 
-
 - Para el paquete de Quarto seguir capítulo de [revealjs](https://quarto.org/docs/presentations/revealjs/)
 - Para Xaringan seguir [capitulo](https://bookdown.org/yihui/rmarkdown/xaringan.html) 
 - Solo presentar las cosas que sean diferentes entre los paquetes.
 
+**Ejemplos y recursos**
+- [Presentación Rladies Xalapa Xaringan](https://slides.silviacanelon.com/introduccion-xaringan)
 
 # Trabajo colaborativo
 
