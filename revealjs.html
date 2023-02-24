@@ -403,32 +403,39 @@ Haydee, Fernanda, Ximena, Sofía
 <section id="paquetes-y-plataformas" class="slide level2">
 <h2>Paquetes y plataformas</h2>
 <ul>
-<li class="fragment">Rmarkdown - Xaringan, revealjs</li>
-<li class="fragment">Quarto - reveal js</li>
+<li>Rmarkdown - Xaringan, revealjs</li>
+<li>Quarto - reveal js</li>
 </ul>
 </section>
 <section id="crear-diapositivas" class="slide level2">
 <h2>Crear diapositivas</h2>
-<div class="sourceCode" id="cb1" data-code-line-numbers="1-10|12|14-15|17|19-20|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="sc">---</span></span>
+<div style="font-size: 25px">
+<ul>
+<li>Yaml: (Yet Another Markdown Language) configura características generales del documento</li>
+<li><a href="https://quarto.org/docs/reference/formats/presentations/revealjs.html">Todas las opciones YAML</a></li>
+</ul>
+</div>
+<div class="sourceCode" id="cb1" data-code-line-numbers="1-11|13|15-16|18|20-21|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="sc">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>title<span class="sc">:</span> <span class="st">"¿Cómo hacer presentaciones en R?"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a>author<span class="sc">:</span> <span class="st">"Haydee, Fernanda, Ximena, Sofía"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a>format<span class="sc">:</span> </span>
-<span id="cb1-5"><a href="#cb1-5"></a>    revealjs<span class="sc">:</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>        slide<span class="sc">-</span>number<span class="sc">:</span> c</span>
-<span id="cb1-7"><a href="#cb1-7"></a>        show<span class="sc">-</span>slide<span class="sc">-</span>number<span class="sc">:</span> all</span>
-<span id="cb1-8"><a href="#cb1-8"></a>        menu<span class="sc">:</span> </span>
-<span id="cb1-9"><a href="#cb1-9"></a>            side<span class="sc">:</span> left</span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="sc">---</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="do">## Diapositiva 1 </span></span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="sc">-</span> Contenido <span class="dv">1</span> </span>
-<span id="cb1-15"><a href="#cb1-15"></a><span class="sc">-</span> Contenido <span class="dv">2</span> </span>
-<span id="cb1-16"><a href="#cb1-16"></a></span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="sc">---</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="sc">-</span> Contenido <span class="dv">1</span> </span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="sc">-</span> Contenido <span class="dv">2</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5"></a>    revealjs<span class="sc">:</span> </span>
+<span id="cb1-6"><a href="#cb1-6"></a>        slide<span class="sc">-</span>number<span class="sc">:</span> c <span class="co"># mostrar solo el número de la diapositiva</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>        show<span class="sc">-</span>slide<span class="sc">-</span>number<span class="sc">:</span> all <span class="co"># mostrar la numeración para todas las vistas</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>        footer<span class="sc">:</span> <span class="st">"Reveal js Quarto"</span> <span class="co"># pie de diapositiva</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>        menu<span class="sc">:</span> </span>
+<span id="cb1-10"><a href="#cb1-10"></a>            side<span class="sc">:</span> left <span class="co"># mostrar menu de herramientas a la izquierda</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="sc">---</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="do">## Diapositiva 1 </span></span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="sc">-</span> Contenido <span class="dv">1</span> </span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="sc">-</span> Contenido <span class="dv">2</span> </span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="sc">---</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="sc">-</span> Contenido <span class="dv">1</span> </span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="sc">-</span> Contenido <span class="dv">2</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="diapositivas-graduales" class="slide level2">
 <h2>Diapositivas graduales</h2>
@@ -453,35 +460,43 @@ Haydee, Fernanda, Ximena, Sofía
 <span id="cb2-19"><a href="#cb2-19"></a></span>
 <span id="cb2-20"><a href="#cb2-20"></a><span class="sc">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="columnas" class="slide level2">
-<h2>Columnas</h2>
+<section>
+<section id="generen-un-archivo-con-3-diapositivas" class="title-slide slide level1 center" data-background-color="aquamarine">
+<h1>Generen un archivo con 3 diapositivas</h1>
+
+</section>
+<section id="columnas-e-imagenes" class="slide level2">
+<h2>Columnas e imagenes</h2>
+<div>
 <p><br></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="sc">:::</span><span class="er">:</span>{.columns}</span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="sc">:::</span> {.column width<span class="ot">=</span><span class="st">"40%"</span>}</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="sc">:::</span> {.column width<span class="ot">=</span><span class="st">"50%"</span>}</span>
 <span id="cb3-4"><a href="#cb3-4"></a>Izquierda</span>
 <span id="cb3-5"><a href="#cb3-5"></a><span class="sc">:::</span></span>
 <span id="cb3-6"><a href="#cb3-6"></a></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="er">:::</span> {.column width<span class="ot">=</span><span class="st">"60%"</span>}</span>
-<span id="cb3-8"><a href="#cb3-8"></a>Derecha</span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="er">:::</span> {.column width<span class="ot">=</span><span class="st">"50%"</span>}</span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="sc">!</span>[](imagenes<span class="sc">/</span>rladies_logo.jpeg){width<span class="ot">=</span><span class="st">"50%"</span>}</span>
 <span id="cb3-9"><a href="#cb3-9"></a><span class="sc">:::</span></span>
 <span id="cb3-10"><a href="#cb3-10"></a></span>
 <span id="cb3-11"><a href="#cb3-11"></a><span class="er">::::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div class="blank_space">
 <ul>
 <li class="fragment">Ejemplo izquierda</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Ejemplo derecha</li>
-</ul>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p><img data-src="imagenes/rladies_logo.jpeg" class="center_image"></p>
+</div>
 </div>
 </div>
 </section>
 <section id="smaller" class="slide level2">
 <h2><code>{.smaller}</code></h2>
+<p><br></p>
 <div>
 <ul>
 <li>Opciones cambiar el tamaño del texto de toda la diapositiva</li>
@@ -496,23 +511,27 @@ Haydee, Fernanda, Ximena, Sofía
 <span id="cb4-8"><a href="#cb4-8"></a><span class="do">## Titulo diapositiva {.smaller}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="ejemplo-texto-grande" class="slide level2">
+<section id="ejemplo-texto-grande" class="slide level2 bigger-font">
 <h2>Ejemplo (texto grande)</h2>
+<div>
 <ul>
 <li class="fragment">Contenido 1</li>
 <li class="fragment">Contenido 2</li>
 </ul>
+</div>
 </section>
 <section id="ejemplo-texto-pequeño" class="slide level2 smaller">
 <h2>Ejemplo (texto pequeño)</h2>
+<div>
 <ul>
 <li class="fragment">Contenido 1</li>
 <li class="fragment">Contenido 2</li>
 </ul>
+</div>
 </section>
 <section id="notas-y-pies-de-página" class="slide level2 smaller">
 <h2>Notas y pies de página</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="do">## Título de la diapositiva</span></span>
+<div class="sourceCode" id="cb5" data-code-line-numbers="3|6-8|10-12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="do">## Título de la diapositiva</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a></span>
 <span id="cb5-3"><a href="#cb5-3"></a><span class="sc">-</span> Contenido <span class="dv">1</span> <span class="sc">^</span>[Rladies et al., <span class="dv">2023</span>]</span>
 <span id="cb5-4"><a href="#cb5-4"></a><span class="sc">-</span> Contenido <span class="dv">2</span></span>
@@ -534,7 +553,16 @@ Haydee, Fernanda, Ximena, Sofía
 
 <aside><div>
 <p>Nota inferior</p>
-</div><ol class="aside-footnotes"><li id="fn1"><p>Rladies et al., 2023</p></li></ol></aside></section>
+</div><ol class="aside-footnotes"><li id="fn1"><p>Rladies et al., 2023</p></li></ol></aside></section></section>
+<section>
+<section id="en-una-diapositiva-añadan" class="title-slide slide level1 center" data-background-color="aquamarine">
+<h1>En una diapositiva añadan:</h1>
+<ul>
+<li>Una descripción breve de ustedes (columna 1)</li>
+<li>Una foto suya (columna 2)</li>
+<li>Forma de contacto (nota al pie)</li>
+</ul>
+</section>
 <section id="temas" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Temas</h2>
 <p><br></p>
@@ -573,6 +601,7 @@ Haydee, Fernanda, Ximena, Sofía
 <li>Los archivos que definen los temas son de tipo <a href="https://sass-lang.com/documentation/">Sass</a> que es un pre-procesador de CSS y le da algunas capacidades de un lenguaje de programación (variables, reglas anidadas, funciones, etc.)
 <ul>
 <li><a href="https://es.wikipedia.org/wiki/Sass">Wikipedia: ilustra las diferencias con CSS</a></li>
+<li><a href="https://www.youtube.com/watch?v=_a5j7KoflTs&amp;ab_channel=freeCodeCamp.org">Tutorial freecodecamp</a></li>
 </ul></li>
 </ul>
 </div>
@@ -594,6 +623,21 @@ Haydee, Fernanda, Ximena, Sofía
 </ul>
 </div>
 </div>
+<aside class="notes">
+<ul>
+<li>En el formato scss se permite escribir codigo css</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="css-en-la-presentación" class="slide level2">
 <h2>CSS en la presentación</h2>
@@ -608,10 +652,23 @@ Haydee, Fernanda, Ximena, Sofía
 </div>
 <div style="font-size: 40px; color:Tomato">
 <ul>
-<li class="fragment">Ejemplo</li>
+<li>Ejemplo</li>
 </ul>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.w3schools.com/css/default.asp">W3Schools</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.w3schools.com/css/default.asp">W3Schools</a></p></li></ol></aside></section></section>
+<section>
+<section id="actividad" class="title-slide slide level1 center" data-background-color="aquamarine">
+<h1>Actividad:</h1>
+<ul>
+<li><p>Escoger un tema de la lista y agregarlo a la diapositiva</p></li>
+<li><p>En un archivo de texto nuevo (con terminación .scss) cambien el valor de una variable de la lista (<em>nota: añadir tanto el archivo del tema escogido como el archivo modificado</em>)</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>theme<span class="sc">:</span> [theme, my_theme.scss]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>En uno de sus elementos de la diapositiva cambien el formato utilizando la propiedad <code>style</code></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="sc">:::</span>{style<span class="ot">=</span><span class="st">"propiedad: valor;"</span>}</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="sc">-</span> contenido</span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="sc">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
 <section id="diagramas-y-figuras" class="slide level2">
 <h2>Diagramas y figuras</h2>
 <div style="font-size: 30px">
@@ -623,10 +680,10 @@ Haydee, Fernanda, Ximena, Sofía
 <div class="column" style="font-size: 30px">
 <p><strong>Recursos libres</strong></p>
 <ul>
-<li class="fragment"><a href="https://www.biorender.com/">Biorender</a> - más o menos libre</li>
-<li class="fragment"><a href="https://bioicons.com/">Bioicons</a></li>
-<li class="fragment"><a href="https://app.diagrams.net/">Drawio</a></li>
-<li class="fragment"><a href="https://inkscape.org/es/">Inkscape</a></li>
+<li><a href="https://www.biorender.com/">Biorender</a> - más o menos libre</li>
+<li><a href="https://bioicons.com/">Bioicons</a></li>
+<li><a href="https://app.diagrams.net/">Drawio</a></li>
+<li><a href="https://inkscape.org/es/">Inkscape</a></li>
 </ul>
 </div><div class="column" style="font-size: 30px">
 <div class="cell">
@@ -639,7 +696,7 @@ Haydee, Fernanda, Ximena, Sofía
 <div class="footer footer-default">
 <p>Reveal js Quarto</p>
 </div>
-</section>
+</section></section>
 
     </div>
   </div>

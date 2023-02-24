@@ -3,13 +3,14 @@ title: "¿Cómo hacer presentaciones en R?"
 author: "Haydee, Fernanda, Ximena, Sofía"
 format: 
     revealjs:
-        incremental: true
+        incremental: false
         slide-number: c
         show-slide-number: all
         scrollable: true
         footer: "Reveal js Quarto"
         menu: 
             side: right
+        theme: [default, custom.scss]
 ---
 
 ## Paquetes y plataformas
@@ -18,18 +19,27 @@ format:
 - Quarto - reveal js
 
 
-## Crear diapositivas
 
-```{.r code-line-numbers="1-10|12|14-15|17|19-20|"}
+
+
+
+## Crear diapositivas
+:::{style="font-size: 25px"}
+- Yaml: (Yet Another Markdown Language) configura características generales del documento 
+- [Todas las opciones YAML](https://quarto.org/docs/reference/formats/presentations/revealjs.html)
+:::
+
+```{.r code-line-numbers="1-11|13|15-16|18|20-21|"}
 ---
 title: "¿Cómo hacer presentaciones en R?"
 author: "Haydee, Fernanda, Ximena, Sofía"
 format: 
-    revealjs:
-        slide-number: c
-        show-slide-number: all
+    revealjs: 
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Reveal js Quarto" # pie de diapositiva
         menu: 
-            side: left
+            side: left # mostrar menu de herramientas a la izquierda
 ---
 
 ## Diapositiva 1 
@@ -43,6 +53,10 @@ format:
 - Contenido 2 
 
 ```
+
+
+
+
 
 ## Diapositivas graduales 
 
@@ -70,38 +84,59 @@ format:
 
 ```
 
-## Columnas
 
+
+
+
+
+# Generen un archivo con 3 diapositivas {background-color="aquamarine" .center}
+
+
+
+
+
+
+## Columnas e imagenes
+:::{.incremental}
 <br>
 
 ```{.r}
 ::::{.columns}
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 Izquierda
 :::
 
-::: {.column width="60%"}
-Derecha
+::: {.column width="50%"}
+![](imagenes/rladies_logo.jpeg){width="50%"}
 :::
 
 ::::
 ```
 <br>
 
-:::: {.columns}
+:::: {.columns }
 
 ::: {.column width="50%"}
+:::{.blank_space}
 - Ejemplo izquierda
 :::
+:::
 
-::: {.column width="50%"}
-- Ejemplo derecha
+::: {.column width="50%" .fragment}
+![](imagenes/rladies_logo.jpeg){.center_image}
 :::
 
 ::::
+:::
+
+
+
+
+
 
 ## `{.smaller}`
+<br>
 
 :::{.nonincremental}
 - Opciones cambiar el tamaño del texto de toda la diapositiva 
@@ -119,19 +154,35 @@ format:
 ```
 :::
 
-## Ejemplo (texto grande) 
 
+
+
+
+
+## Ejemplo (texto grande) {.bigger-font}
+:::{.incremental}
 - Contenido 1
 - Contenido 2
+:::
+
+
+
+
 
 ## Ejemplo (texto pequeño) {.smaller} 
-
+:::{.incremental}
 - Contenido 1
 - Contenido 2
+:::
+
+
+
+
+
 
 ## Notas y pies de página {.smaller}
 
-```{.r}
+```{.r code-line-numbers="3|6-8|10-12"}
 ## Título de la diapositiva
 
 - Contenido 1 ^[Rladies et al., 2023]
@@ -157,6 +208,20 @@ Nota inferior
 :::
 
 
+
+
+
+
+
+# En una diapositiva añadan:  {background-color="aquamarine" .center}
+
+- Una descripción breve de ustedes (columna 1)
+- Una foto suya (columna 2)
+- Forma de contacto (nota al pie)
+
+
+
+
 ## Temas {auto-animate="true"}
 
 <br>
@@ -175,6 +240,12 @@ format:
 ```
 :::
 
+
+
+
+
+
+
 ## Temas {auto-animate="true"}
 
 <br>
@@ -192,6 +263,12 @@ format:
 ---
 ```
 :::
+
+
+
+
+
+
 ## Cambios personalizados en los temas
 
 :::{.nonincremental}
@@ -199,6 +276,7 @@ format:
 
 - Los archivos que definen los temas son de tipo [Sass](https://sass-lang.com/documentation/) que es un pre-procesador de CSS y le da algunas capacidades de un lenguaje de programación (variables, reglas anidadas, funciones, etc.)
     - [Wikipedia: ilustra las diferencias con CSS](https://es.wikipedia.org/wiki/Sass)
+    - [Tutorial freecodecamp](https://www.youtube.com/watch?v=_a5j7KoflTs&ab_channel=freeCodeCamp.org)
 
 :::
 ```css
@@ -221,6 +299,18 @@ $link-color: #42affa;
 :::
 :::
 
+
+:::{.notes}
+- En el formato scss se permite escribir codigo css
+
+:::
+
+
+
+
+
+
+
 ## CSS en la presentación 
 :::{.nonincremental}
 
@@ -237,6 +327,34 @@ $link-color: #42affa;
 :::{style="font-size: 40px; color:Tomato"}
 - Ejemplo 
 :::
+
+
+
+
+
+
+
+# Actividad:  {background-color="aquamarine" .center}
+
+- Escoger un tema de la lista y agregarlo a la diapositiva
+- En un archivo de texto nuevo (con terminación .scss) cambien el valor de una variable de la lista (*nota: añadir tanto el archivo del tema escogido como el archivo modificado*)
+
+     ```r
+    theme: [theme, my_theme.scss]
+     ```
+
+- En uno de sus elementos de la diapositiva cambien el formato utilizando la propiedad `style`
+
+     ```r
+     :::{style="propiedad: valor;"}
+     - contenido
+     :::
+     ```
+
+
+
+
+
 
 ## Diagramas y figuras 
 
