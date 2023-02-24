@@ -40,6 +40,7 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
 
 **Ejemplos y recursos**
 - [Presentación Rladies Xalapa Xaringan](https://slides.silviacanelon.com/introduccion-xaringan)
+- [Curso de Xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/) - Tiene los materiales y los videos 
 
 # Trabajo colaborativo
 
