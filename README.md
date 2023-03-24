@@ -8,6 +8,7 @@ Ejemplo presentación R Ladies sobre el tema [link](https://www.youtube.com/watc
 
 
 - Presentaciones [revealjs](https://quarto.org/docs/presentations/revealjs/)
+  - [Ejemplo](https://haydeeperuyero.github.io/Xaringan_RLadies/revealjs.html)
 - Presentaciones Xaringan
   - [Tema de RLadies Global](https://www.apreshill.com/project/rladies-xaringan/)
 - Recomendación para hacer diagramas complicados
