@@ -1,0 +1,351 @@
+---
+title: "Presentaciones"
+subtitle: "⚔<br/>con xaringan"
+author: "Fernanda, Sofía, Haydeé"
+institute: "R-Ladies Morelia"
+date: "2023/05/17"
+output:
+  xaringan::moon_reader:
+    css: 
+      - xaringan-themer.css
+      - css/mi-tema.css
+      - default
+      - rladies
+      - rladies-fonts 
+    lib_dir: libs
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: googlecode
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+      beforeInit: "macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+
+---
+```{r setup, include = FALSE}
+# Setup chunk
+# Paquetes a usar
+#options(htmltools.dir.version = FALSE) cambia la forma de incluir código, los colores
+
+library(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons)
+library(fontawesome)
+library(emo) 
+
+# set default options
+opts_chunk$set(collapse = TRUE,
+               dpi = 300,
+               warning = FALSE,
+               error = FALSE,
+               comment = "#")
+
+knit_engines$set("yaml", "markdown")
+
+xaringanExtra::use_tile_view()
+xaringanExtra::use_clipboard()
+
+xaringanExtra::use_panelset()
+
+# Para compartir e incrustar en otro sitio web
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin")
+)
+
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{r xaringan-editable, echo=FALSE}
+# Para tener opciones de edición: el lapiz y goma
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_scribble()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+# Establecer colores para el tema
+library(xaringanthemer)
+style_mono_light(base_color = "#562457")
+```
+
+class: title-slide, middle, center
+background-image: url(imagenes/rladies_logo.jpeg) 
+background-position: 10% 50%
+background-size: 15%
+
+
+.center-column[
+# `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$subtitle`
+
+####`r rmarkdown::metadata$author` 
+#### `r rmarkdown::metadata$date`
+]
+
+.White[.left[.footnote[RLdaies Theme [RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]]
+
+---
+background-image: url(imagenes/rladies_logo.jpeg) 
+background-position: 10% 10%
+background-size: 10%
+class: middle, center
+
+
+# Sobre nosotras
+
+.left-col[
+
+### Sofía
+
+
+]
+
+.center-col[
+
+### Fernanda 
+
+]
+
+.right-col[
+
+### `r fontawesome::fa("circle-nodes", fill = "#f0ffff")` Haydeé
+
+Investigadora Posdoctoral en el CCM UNAM
+
+Áreas: Análisis Topológico de Datos, Teoría Geométrica de Grupos
+
+[`r fontawesome::fa("link")` haydeeperuyero.github.io](https://haydeeperuyero.github.io/)
+
+]
+
+---
+
+class: center, middle
+
+<img src="imagenes/rladies_logo.jpeg"
+width="55px"
+/><br>
+## [R-Ladies Morelia](https://www.meetup.com/es-ES/rladies-morelia/)
+
+----
+
+--
+
+### [`r emo::ji("package")` RLadies](https://www.apreshill.com/project/rladies-xaringan/): Usaremos el [tema de R-Ladies](https://www.apreshill.com/project/rladies-xaringan/)
+
+--
+
+
+
+### [`r emo::ji("package")` xaringan <img src="imagenes/hex-xaringan.png" width="25px"/>](https://github.com/yihui/xaringan#xaringan): Paquete para crear diapositivas con `remarks.js` y R Markdown 
+
+--
+
+### [`r emo::ji("package")` xaringanExtra](https://github.com/gadenbuie/xaringanExtra/#xaringanExtra): Opcienes de edición en línea, incrustar en otro documento, escribir y otras características `r emo::ji("sunglasses")`
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("laptop-file", height = "3em")`
+# ¿Cómo creamos presentaciones con R?
+
+--
+
+----
+
+
+### remark.js
+
+--
+
+### xaringan
+
+--
+
+### CSS
+
+---
+
+## remark.js
+
+----
+
+.pull-left[
+.center[
+### `r fontawesome::fa("js")`JavaScript
+
+### **y**
+
+### `r fontawesome::fa("markdown")` Markdown
+]
+]
+
+.pull-right[
+Una herramienta para presentaciones de diapositivas basadas en Markdown a traves de la web.
+
+```{r, echo=FALSE}
+knitr::include_url("https://remarkjs.com", height = "350px")
+```
+[https://remarkjs.com](https://remarkjs.com)
+]
+
+---
+##  xaringan
+
+----
+
+.pull-left[
+.center[
+<img src="imagenes/hex-xaringan.png" width="50px"/>
+
+**xaringan**: paquete que le presenta `remark.js` a R Markdown
+
+<img src="imagenes/hex-rmarkdown.png" width="50px"/>
+]]
+
+.pull-right[
+```{r, echo=FALSE}
+knitr::include_url("https://slides.yihui.org/xaringan", height = "350px")
+```
+[https://slides.yihui.org/xaringan](https://slides.yihui.org/xaringan)
+]
+
+---
+
+## CSS
+
+----
+
+**CSS** significa **C**ascading **S**tyle **S**heet y es una hoja de estilo que convierte:
+.pull-left[
+Contenido HTML funcional pero .my-red["plano"]
+
+<img src="imagenes/ejemplo_sin_css.png"
+width="100%" style="border:2px solid rgba(136, 57, 138, 0.3)"/>
+]
+
+.pull-right[
+en contenido HTML con .my-red["formato".]
+
+<img src="imagenes/ejemplo_css.png" width="100%" style="border:2px solid rgba(136, 57, 138, 0.3)"/>
+]
+
+---
+class: middle, center
+
+`r fontawesome::fa("file-circle-question", height = "3em")`
+# ¿Cómo creamos una presentacion?
+
+----
+
+## **Opción 1:** Crear una presentación desde cero.
+
+--
+
+## **Opción 2:** Usar alguna plantilla 
+
+### `r fontawesome::fa("github")` [tutorial/ejemplo-diapositivas-xaringan.Rmd](https://github.com/HaydeePeruyero/Xaringan_RLadies/tutorial/ejemplo-diapositivas-xaringan.Rmd)
+
+---
+
+## `r fontawesome::fa("file-powerpoint")` Crear una presentación desde cero
+
+.pull-left[
+### 1\. `r emo::ji("page_facing_up")` New File
+
+### 2\. `r emo::ji("page_facing_up")` New R Markdown
+
+<img src="imagenes/picture1.png" width="75%"/>
+]
+
+--
+
+.pull-right[
+### 3\. `r emo::ji("memo")` From Template `r fontawesome::fa("angle-right")` Ninja Presentation
+
+<img src="imagenes/picture2.png" width="75%"/>
+
+### 4\. `r emo::ji("floppy_disk")` Editar y guardar documento
+]
+
+---
+name: en-vivo
+background-color: var(--Purple)
+class: middle, center, inverse
+
+`r fontawesome::fa("code", height = "3em")`
+# ¡A practicar!
+
+---
+template: en-vivo
+
+## ¡Comencemos!
+
+---
+
+### `r fontawesome::fa("file")` Usar la plantilla de R-Ladies Morelia
+
+#### YAML
+
+```{yaml, eval=FALSE, echo=TRUE}
+title: "Título"
+subtitle: "Subtítulo"
+author: "Nombre autor"
+institute: "R-Ladies Morelia"
+date: "2023/05/17"
+output:
+  xaringan::moon_reader:     # Tipo de salida
+    css:
+      - xaringan-themer.css   # Los temas a usar CSS 
+      - mytheme.css           # Tema con los colores de letras
+      - rladies     #Otra forma de indicarlo: ["default", "rladies", "rladies-fonts"] 
+    lib_dir: libs           # Crea un directorio para las bibliotecas
+    seal: false             # Permite crear diapositiva de título personalizada 
+    self_contained: false   
+    nature:
+      highlightStyle: github   # Resaltar la sintaxis de los bloques de código con estilo github 
+      highlightLines: true    # Permite resaltar líneas de código
+      countIncrementalSlides: false  # No incrementa el número de diapositva para diapositivas graduales
+      ratio: 16:9               # Proporción de diapositva: 4:3
+      beforeInit: "archivo.js"  # Agregar los macros, el de columnas
+      slideNumberFormat: |          # formato de número de página 
+```
+
+
+---
+
+### `r fontawesome::fa("file")` Usar la plantilla de R-Ladies Morelia
+
+#### El bloque de configuración ("Setup")
+
+```{r setup1, include = TRUE, echo= TRUE, eval=FALSE}
+# Setup chunk
+# Paquetes a usar
+#options(htmltools.dir.version = FALSE)
+library(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons)
+library(fontawesome) 
+library(emo) 
+
+# set default options de knitr
+opts_chunk$set(collapse = TRUE, 
+               dpi = 300,  # resolución de los gráficos
+               warning = FALSE, # no mostrar mensajes de advertencia
+               error = FALSE, # No mostrar mensajes de error en las diapositivas
+               comment = "#") # comentarios
+```
+
+

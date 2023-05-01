@@ -1,0 +1,163 @@
+/*-- NOTA: Esta son los valores utilizados por el tema "rladies"---*/
+/*
+https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/rladies.css
+Ve este blog para mas informacion: https://alison.rbind.io/post/2017-12-18-r-ladies-presentation-ninja/
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: #562457;
+}
+a, a > code {
+  color: #88398a;
+}
+.remark-code-line-highlighted { background-color: rgba(136, 57, 138, 0.3); }
+
+.inverse {
+  background-color: #562457;
+}
+.inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, inverse a > code {
+  color: #fff;
+}
+*/
+
+:root{
+/*-- Variables definidas de acuerdo a los colors del tema "rladies" --*/
+--morado-oscuro: #562457;
+--morado-claro: #88398A;
+--gris: #D3D3D3;
+--negro: #181818;
+--blanco: #FFFFFF;
+--DarkBlue:           #003087;
+--Blue:               #005EB8;
+--BrightBlue:         #0072CE;
+
+--Black:              #231F20;
+--DarkGrey:           #425563;
+--MidGrey:            #768692;
+--PaleGrey:           #E8EDEE;
+--White:              #FFFFFF;
+
+--DarkGreen:          #006747;
+--Green:              #009639;
+--AquaGreen:          #00A499;
+
+--Purple:             #bf94e4;
+--DarkPink:           #7C2855;
+--Pink:               #AE2573;
+--DarkRed:            #8A1538;
+--Red:                #DA291C;
+
+--my-blue:            #122140;
+--my-yellow:          #e5bf00;
+--my-gold:            #C99C00;
+
+--my-coral:          #903030;
+--my-red:            #FF3300;
+--my-pink:           #c09090;
+}
+}
+
+/* -- CUSTOM CLASSES ---------------------------------------------------------*/
+
+/*-- Custom classes for text emphasis --*/
+.blue       { color:  var(--Blue) }
+.green      { color:  var(--Green) }
+.pink       { color:  var(--Pink) }
+.red        { color:  var(--Red) }
+.warmyellow { color:  var(--WarmYellow) }
+.palegrey   { color:  var(--PaleGrey)}
+.my-blue    { color:  var(--my-blue) }
+.my-yellow  { color:  var(--my-yellow) }
+.my-gold    { color:  var(--my-gold)}
+.my-red     { color:  var(--my-red) }
+.my-coral   { color:  var(--my-coral) }
+.my-pink    { color:  var(--my-pink) }
+.my-hot-pink { background-color: #ff69b4 }
+.white      { color:  var(--White) } 
+.morado-claro { color: var(--morado-claro) }
+
+.texto-grande {
+    font-size: 2em;
+}
+
+.fondo-blanco { background-color: #FFFFFF }
+
+/*-- ENLACES/ANCLAS --*/
+a {
+  border-bottom:      3px solid var(--morado-claro);
+  line-height:        2rem;
+}
+
+a:hover { border-bottom: none; }
+
+.inverse a {
+  border-bottom:      3px solid var(--blanco);
+  line-height:        2rem;
+}
+
+/*-- CODE CHUNKS --*/
+
+/*-- Code chunk background layer --*/
+pre {
+  /*border: 2px solid rgba(204, 189, 204, 0.8); /* code chunk border*/
+  border:             3px solid rgba(136, 57, 138, 0.3);
+  box-shadow:         0px 0px 0px 0px var(--morado-claro);
+  padding:            0.1em;                    /* padding between code chunk and border */
+  background:         none !important;
+  overflow-x:         auto;                     /* enable horizontal scrolling with overflow */
+  border-radius:      1px;                      /* modify rounding of corners*/
+}
+
+/*--  --*/
+pre code {
+  background:         none;
+  font-size:          18px !important;
+}
+
+/*-- BARRA HORIZONTAL --*/
+hr {
+  content:            '';
+  display:            block;
+  border:             none;
+  background-color:   var(--morado-claro);
+  height:             0.1em;
+}
+
+.inverse hr {
+  content:            '';
+  display:            block;
+  border:             none;
+  background-color:   var(--gris);
+  height:             0.1em;
+}
+
+/*-- Esconde el numero de la diapositiva titular --*/
+.titular .remark-slide-number { display: none; }
+
+
+/*-- EXPERIMENTAL -----------------------------------------------------------*/
+
+/*-- 3 column layout --*/
+.left-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.center-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.right-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
