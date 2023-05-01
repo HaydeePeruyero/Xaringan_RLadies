@@ -1,3 +1,7 @@
+/*-- NOTA: Estos temas se basan en los de rladies y los siguientes tutoriales ---*/
+/*-- https://slides.silviacanelon.com/introduccion-xaringan ---*/
+/*-- https://spcanelon.github.io/xaringan-basics-and-beyond---*/
+/*-- https://github.com/emilyriederer/xaringan_columns ---*/
 /*-- NOTA: Esta son los valores utilizados por el tema "rladies"---*/
 /*
 https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/rladies.css
@@ -135,7 +139,18 @@ hr {
 .titular .remark-slide-number { display: none; }
 
 
-/*-- EXPERIMENTAL -----------------------------------------------------------*/
+/*-- Footnote --*/
+.footnote {
+  position:           absolute;
+  bottom:             2em;
+  padding-right:      4em;
+  font-size:          70%;
+  line-height:        1em;
+  color:              var(--White);
+}
+
+
+/*-- Columnas -----------------------------------------------------------*/
 
 /*-- 3 column layout --*/
 .left-col {
