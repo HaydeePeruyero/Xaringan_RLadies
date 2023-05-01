@@ -125,7 +125,12 @@ Estudiante de maestría en Ciencias Biológicas
 
 .center-col[
 
-### Fernanda 
+### `r fontawesome::fa("dna", fill = "#f0ffff")` Fernanda Cidel
+
+Estudiante de Lic. en Ecología 
+ENES Morelia, UNAM
+
+
 
 ]
 
@@ -492,10 +497,20 @@ class: middle, center, inverse
 ## Crea tu diapositiva de título y algunas diapositivas
 
 ---
-
+class: middle, center
+background-color: var(--my-pink)
 # `r fontawesome::fa("table-columns")` Ubicación de texto
-
+----
 ## Alinear diapositiva entera
+
+Para definir la **alineación** de los elementos de la diapositiva tenemos varias opciones:
+
+`r fontawesome::fa("1")`
+```{r}
+#class: middle, center
+```
+--
+Donde **middle** define la posición vertical y **center** la posición horizontal
 
 ---
 # `r fontawesome::fa("table-columns")` Ubicación de texto
