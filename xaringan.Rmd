@@ -514,6 +514,11 @@ Todas las opciones
 
 ---
 
+# Códigos
+
+Incluir códigos y resaltarlos
+
+---
 # ¿Cómo compartir nuestras diapositivas?
 
 ---
