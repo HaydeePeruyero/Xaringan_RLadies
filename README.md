@@ -28,11 +28,11 @@
 
 ## **Ejemplos y recursos**
 - [Presentación Rladies Xalapa Xaringan](https://slides.silviacanelon.com/introduccion-xaringan)
-- [Curso de Xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/) - Tiene los materiales y los videos 
+  - [Video presentación R Ladies Xalapa sobre Xaringan](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
+- [Curso de Xaringan avanzado](https://spcanelon.github.io/xaringan-basics-and-beyond/)
 - [Curso CSS freecodecamp](https://www.youtube.com/watch?v=OXGznpKZ_sA&ab_channel=freeCodeCamp.org)
   - [Repositorio de recursos del curso (CSS)](https://github.com/gitdagray/css_course)
-- [Link](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+- [Xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html)
 - [Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
-- [Ejemplo presentación R Ladies Xalapa sobre el tema](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
 - [Presentaciones revealjs](https://quarto.org/docs/presentations/revealjs/)
 - [Tema de RLadies Global](https://www.apreshill.com/project/rladies-xaringan/)
