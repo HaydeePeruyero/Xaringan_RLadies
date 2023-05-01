@@ -58,6 +58,7 @@ a, a > code {
 --my-coral:          #903030;
 --my-red:            #FF3300;
 --my-pink:           #c09090;
+--quarto:            #87cefa;
 }
 }
 
@@ -79,6 +80,7 @@ a, a > code {
 .my-hot-pink { background-color: #ff69b4 }
 .white      { color:  var(--White) } 
 .morado-claro { color: var(--morado-claro) }
+.quarto { color: var(--quarto) }
 
 .texto-grande {
     font-size: 2em;

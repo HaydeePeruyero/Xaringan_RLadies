@@ -261,7 +261,7 @@ en contenido HTML con .my-red["formato".]
 ]
 
 ---
-background-color: rgba(135,206,250,0.2)
+background-color: var(--quarto)
 
 # Quarto reveal js
 
@@ -308,12 +308,12 @@ class: middle, center
 
 ---
 
-background-color: rgba(135,206,250,0.2)
+background-color: var(--quarto)
 
 # Reveal js
 
 ```{r, echo=FALSE}
-knitr::include_url("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html")
+xaringanExtra::embed_xaringan("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html")
 ```
 
 ---
