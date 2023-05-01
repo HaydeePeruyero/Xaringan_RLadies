@@ -47,13 +47,6 @@ opts_chunk$set(collapse = TRUE,
                error = FALSE,
                comment = "#")
 
-top_icon = function(x) {
-  icons::icon_style(
-    icons::fontawesome(x),
-    position = "fixed", top = 10, right = 10
-  )
-}
-
 knit_engines$set("yaml", "markdown")
 
 xaringanExtra::use_tile_view()
@@ -115,11 +108,6 @@ class: middle, center
 
 ### Sofía
 
-Estudiante de maestría en Ciencias Biológicas
-
-Áreas: Genética de poblaciones, Filogeografía, Ecología 
-
-[`r fontawesome::fa("link")` sofiazorrilla](https://github.com/sofiazorrilla)
 
 ]
 
@@ -164,16 +152,9 @@ width="55px"
 
 --
 
-### [`r emo::ji("package")` xaringanExtra](https://github.com/gadenbuie/xaringanExtra/#xaringanExtra): Opciones de edición en línea, incrustar en otro documento, escribir y otras características `r emo::ji("sunglasses")`
-
---
-
-
-### <img src="imagenes/quarto.png"; width="100px"> [Quarto revealjs](https://quarto.org/docs/presentations/revealjs/): Nuevo sistema de publicación de documentos que pretende integrar tanto R como otros lenguajes de programación (python, Julia, etc.)
+### [`r emo::ji("package")` xaringanExtra](https://github.com/gadenbuie/xaringanExtra/#xaringanExtra): Opcienes de edición en línea, incrustar en otro documento, escribir y otras características `r emo::ji("sunglasses")`
 
 ---
-
-
 
 class: center, middle
 
@@ -261,14 +242,6 @@ en contenido HTML con .my-red["formato".]
 ]
 
 ---
-background-color: rgba(135,206,250,0.2)
-
-# Quarto reveal js
-
-Explicación de qué es quarto! @Sofia
-
-
----
 class: middle, center
 
 `r fontawesome::fa("file-circle-question", height = "3em")`
@@ -305,16 +278,6 @@ class: middle, center
 
 ### 4\. `r emo::ji("floppy_disk")` Editar y guardar documento
 ]
-
----
-
-background-color: rgba(135,206,250,0.2)
-
-# Reveal js
-
-```{r, echo=FALSE}
-knitr::include_url("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html")
-```
 
 ---
 background-color: var(--Purple)
@@ -531,90 +494,13 @@ class: middle, center, inverse
 
 ---
 
-# Imágenes
+# Imagenes
 
-Existen tres formas de poner imágenes en una diapositiva.
-
-## Primera opción: Markdown
-
-.pull-left[
-
-```{markdown, eval=FALSE, echo=TRUE}
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
-```
-
-
-  - Es la forma estándar de poner imágenes en Markdown.
-  - No es muy flexible `r emo::ji("sad")` .
-  - El tamaño de salida de la imagen depende de la imagen. 
-  - Se puede cambiar el tamaño de la imagen con  [macros personalizados](https://slides.yihui.org/xaringan/#33) o con las opciones `{width='500px'}` `r emo::ji("smirking_face")`
-
-]
-.pull-right[
-
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
-
-]
-
----
-
-# Imágenes
-
-## Segunda opción: Knit
-
-.pull-left[
-
-
-```{r imagen-knitr_example, echo=TRUE, fig.show="hide"}
-knitr::include_graphics("imagenes/rladies_logo.jpeg")
-```
-
-
-  - Bastante flexible `r emo::ji("happy")` .
-  - El bloque de código toma espacio.
-  - Permite incluir texto alternativo.
-  - Se puede configurar dimensión, posición con los atributos del chunk `r emo::ji("smirking_face")`.
-  
-]
-.pull-right[
-
-
-```{r imagen-knitr, fig.dim=c(7,5), fig.cap="Logo de R-Ladies Morelia", fig.alt="Logo de R-Ladies Morelia"}
-knitr::include_graphics("imagenes/rladies_logo.jpeg")
-```
-
-
-]
-
----
-
-# Imágenes
-
-## Tercera opción: HTML
-
-.pull-left[
-```{html, eval=FALSE, echo=TRUE}
-<img src="imagenes/rladies_logo.jpeg" width="50%"
-alt="logo-rladies"/>
-```
-
-  - Es la opción más flexible.
-  - No tiene apariencia agradable su código
-  - Referencia de la [sintaxis](https://www.w3schools.com/html/html_images.asp)
-
-
-]
-
-.pull-right[
-<img src="imagenes/rladies_logo.jpeg" width="75%"/>
-]
-
-
+Todas las opciones
 
 ---
 
 # Fondos
-
 
 ---
 
@@ -644,5 +530,4 @@ Incluir códigos y resaltarlos
 ## Hacer editables las diapositivas
 
 ## Links para compartir
-
 
