@@ -1,0 +1,42 @@
+---
+format: 
+    revealjs: 
+        self-contained: true
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Reveal js Quarto" # pie de diapositiva
+
+        menu: 
+            side: left # mostrar menu de herramientas a la izquierda
+---
+
+## Crear diapositivas {background-color="rgba(135,206,250,0.2)"}
+:::{style="font-size: 25px"}
+- Yaml: (Yet Another Markdown Language) configura características generales del documento 
+- [Todas las opciones YAML](https://quarto.org/docs/reference/formats/presentations/revealjs.html)
+:::
+
+```{.r code-line-numbers="1-11|13|15-16|18|20-21|"}
+---
+title: "¿Cómo hacer presentaciones en R?"
+author: "Haydee, Fernanda, Ximena, Sofía"
+format: 
+    revealjs: 
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Reveal js Quarto" # pie de diapositiva
+        menu: 
+            side: left # mostrar menu de herramientas a la izquierda
+---
+
+## Diapositiva 1 
+
+- Contenido 1 
+- Contenido 2 
+
+---
+
+- Contenido 1 
+- Contenido 2 
+
+```

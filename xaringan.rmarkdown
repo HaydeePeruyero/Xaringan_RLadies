@@ -28,6 +28,7 @@ output:
         </div>
 
 ---
+
 ```{r setup, include = FALSE}
 # Setup chunk
 # Paquetes a usar
@@ -78,6 +79,7 @@ library(xaringanthemer)
 #style_mono_light(base_color = "#562457")
 ```
 
+
 class: title-slide, middle, center
 background-image: url(imagenes/rladies_logo.jpeg) 
 background-position: 10% 50%
@@ -93,6 +95,7 @@ background-size: 15%
 ]
 
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
+
 
 ---
 background-image: url(imagenes/rladies_logo.jpeg) 
@@ -135,6 +138,7 @@ Investigadora Posdoctoral en el CCM UNAM
 ]
 
 ---
+
 
 class: center, middle
 
@@ -203,9 +207,11 @@ class: center, middle
 
 Una herramienta para presentaciones de diapositivas basadas en Markdown a través de la web.
 
+
 ```{r, echo=FALSE}
 knitr::include_url("https://remarkjs.com", height = "150px")
 ```
+
 [https://remarkjs.com](https://remarkjs.com)
 
 ]
@@ -224,9 +230,11 @@ Paquete que le presenta `remark.js` a R Markdown
 
 El autor menciona que una presentación debe comunicar .my-red[conocimiento] y una gran presentación debe .my-red[hipnotizar] a la audiencia. 
 
+
 ```{r, echo=FALSE}
 knitr::include_url("https://slides.yihui.org/xaringan", height = "150px")
 ```
+
 [https://slides.yihui.org/xaringan](https://slides.yihui.org/xaringan)
 
 ]
@@ -253,13 +261,6 @@ en contenido HTML con .my-red["formato".]
 <img src="imagenes/ejemplo_css.png" width="100%" style="border:2px solid rgba(136, 57, 138, 0.3)"/>
 ]
 
----
-background-color: rgba(135,206,250,0.2)
-
-# Quarto reveal js
-
-Explicación de qué es quarto! @Sofia
-
 
 ---
 class: middle, center
@@ -278,6 +279,7 @@ class: middle, center
 ### `r fontawesome::fa("github")` [tutorial/ejemplo-diapositivas-xaringan.Rmd](https://github.com/HaydeePeruyero/Xaringan_RLadies/tutorial/ejemplo-diapositivas-xaringan.Rmd)
 
 ---
+
 
 ## `r fontawesome::fa("file-powerpoint")` Crear una presentación desde cero
 
@@ -299,15 +301,6 @@ class: middle, center
 ### 4\. `r emo::ji("floppy_disk")` Editar y guardar documento
 ]
 
----
-
-background-color: rgba(135,206,250,0.2)
-
-# Reveal js
-
-```{r, echo=FALSE}
-knitr::include_url("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html")
-```
 
 ---
 background-color: var(--Purple)
@@ -319,9 +312,11 @@ class: middle, center, inverse
 
 ---
 
+
 ### `r fontawesome::fa("file")` Usar la plantilla de R-Ladies Morelia
 
 #### YAML
+
 
 ```{yaml, eval=FALSE, echo=TRUE}
 title: "Título"
@@ -345,11 +340,13 @@ output:
 ```
 
 
+
 ---
 
 ### `r fontawesome::fa("file")` Usar la plantilla de R-Ladies Morelia
 
 #### El bloque de configuración ("Setup")
+
 
 ```{r setup1, include = TRUE, echo= TRUE, eval=FALSE}
 # Setup chunk
@@ -369,6 +366,7 @@ opts_chunk$set(collapse = TRUE,
                error = FALSE, # No mostrar mensajes de error en las diapositivas
                comment = "#") # comentarios
 ```
+
 
 El contenido de la primera diapositiva comienza debajo de los tres guiones `---` después del `YAML`.
 
@@ -397,9 +395,11 @@ Otras opciones para los chunks están [aquí](https://yihui.org/knitr/options/#c
 
 Para generar las diapositivas tenemos que usar la opción de knit `Moon Reader` o desde la consola 
 .left[
+
 ```{r, include = TRUE, eval=FALSE}
 xaringan::inf_mr()
 ```
+
 ]
 
 ---
@@ -455,6 +455,7 @@ Xaringan ocupa tanto código RMarkdown como código de `remarks.js` y `css`.
 
 En el `YAML` inicial, se configuró la opción `seal = FALSE` lo cual nos permite configurar nuestra diapositiva de título, si se quita esta opción, entonces la diapositiva de título será la de default del tema.
 
+
 ```{r, eval=FALSE}
 class: title-slide, middle, center
 background-image: url(imagenes/rladies_logo.jpeg) 
@@ -475,6 +476,7 @@ background-size: 15%
 ```
 
 
+
 ---
 
 background-color: var(--Purple)
@@ -490,12 +492,14 @@ class: middle, center, inverse
 
 ## Alinear diapositiva entera
 
+
 ---
 # `r fontawesome::fa("table-columns")` Ubicación de texto
 
 ## Alinear solo parte del texto
 
 --- 
+
 
 # `r fontawesome::fa("table-columns")` Ubicación de texto
 
@@ -548,10 +552,12 @@ Todas las opciones
 
 Incluir códigos y resaltarlos
 
+
 ---
 # ¿Cómo compartir nuestras diapositivas?
 
 ---
+
 
 # `XaringanExtra`
 
@@ -560,4 +566,5 @@ Incluir códigos y resaltarlos
 ## Hacer editables las diapositivas
 
 ## Links para compartir
+
 
