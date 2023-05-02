@@ -75,6 +75,10 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE,         #<<
   mute_unhighlighted_code = TRUE  #<<
 )
+
+# Agregar web cam
+
+xaringanExtra::use_webcam()
 ```
 
 ```{r xaringan-editable, echo=FALSE}
@@ -445,7 +449,7 @@ Otras opciones para los chunks están [aquí](https://yihui.org/knitr/options/#c
 
 # `r fontawesome::fa("rocket")` Moon Reader
 
-Para generar las diapositivas tenemos que usar la opción de knit `Moon Reader` o desde la consola 
+`r emo::ji("yarn")` Para generar las diapositivas tenemos que usar la opción de knit `Moon Reader` o desde la consola 
 .left[
 ```{r, include = TRUE, eval=FALSE}
 xaringan::inf_mr()
@@ -708,34 +712,346 @@ iris %>%
 
 ---
 
+### [`library(gt)`](https://gt.rstudio.com/index.html)
+
+```{r, echo=TRUE, eval=TRUE}
+iris %>% 
+  head() %>%
+  gt::gt() %>%
+  gt::tab_spanner(label = "Petalo", columns = vars(Petal.Length,Petal.Width)) %>%
+  gt::tab_spanner(label = "Sepalo", columns = vars(Sepal.Length,Sepal.Width))
+```
+
+---
+
+background-color: var(--Purple)
+class: middle, center, inverse
+
+`r fontawesome::fa("code", height = "3em")`
+# Práctica: 
+### Carga tu base de datos favorita y muestrala en tus diapositivas
+
+---
+
 ## `r fontawesome::fa("chart-line")` Plots
 
+.pull-left[
 
+#### Código
+
+````
+```{r plot, echo=TRUE, fig.height=5, fig.show='hide'}`r ''`
+cl <- c("maroon3", "sienna2", "skyblue1")
+
+p <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))+
+  geom_point(aes(colour = Species)) +
+  scale_colour_manual(values=cl)+
+  labs(title = "Longitud y Ancho Sepal",
+       subtitle = "Iris data set",
+       x = "Longitud Sepal",
+       y = "Ancho Sepal",
+       caption = "Datos: Iris data set from `data(iris)`",
+       fill = "Especies")
+p
+```
+````
+
+]
+
+.pull-right[
+
+#### Plot
+
+```{r plot2, echo=FALSE, fig.height=5}
+cl <- c("maroon3", "sienna2", "skyblue1")
+
+p <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))+
+  geom_point(aes(colour = Species)) +
+  scale_colour_manual(values=cl)+
+  labs(title = "Longitud y Ancho Sepal",
+       subtitle = "Iris data set",
+       x = "Longitud Sepal",
+       y = "Ancho Sepal",
+       caption = "Datos: Iris data set from `data(iris)`",
+       fill = "Especies")
+p
+```
+
+]
+
+---
+
+background-color: var(--Purple)
+class: middle, center, inverse
+
+`r fontawesome::fa("code", height = "3em")`
+# Práctica: 
+### Con la base de datos que cargaste, genera un plot con diferentes opciones del chunk
 
 ---
 
 ## `r fontawesome::fa("code")` Códigos
 
+La forma de incrustar código en tus presentaciones es con los chunks. Existen varias formas de resaltar código.
 
+.panelset[
+.panel[.panel-name[`*`]
+
+````
+```{r tidy=FALSE, eval =FALSE}`r ''`
+x <- 1
+y <- 2
+** z <- x+y
+```
+````
+
+Produciría
+
+```r
+x <- 1
+y <- 2
+* z <- x+y 
+```
+
+]
+
+.panel[.panel-name[`{{ code }}`]
+
+````
+```{r tidy=FALSE, eval=FALSE}`r ''`
+x <- 1
+y <- 2
+{{ z <- x+y }}
+```
+````
+
+Produciría
+
+```{r tidy=FALSE}
+x <- 1
+y <- 2
+{{ z <- x+y }}
+```
+
+
+]
+
+.panel[.panel-name[`#<<`]
+
+````
+```{r tidy=FALSE, eval=FALSE}`r ''`
+x <- 1
+y <- 2
+z <- x+y #<<
+```
+````
+
+Produciría
+
+```{r tidy=FALSE}
+x <- 1
+y <- 2
+z <- x+y #<<
+```
+
+
+]
+]
+
+Las opciones de los chunks en los 3 casos son solo para ejemplo, recordar que `eval=FALSE` realizará que no se evalúe el código.
+
+
+---
+
+background-color: var(--Purple)
+class: middle, center, inverse
+
+`r fontawesome::fa("code", height = "3em")`
+# Práctica: 
+## Incrusta código y resalta algunas líneas
 
 ---
 
 # ¿Cómo compartir nuestras diapositivas?
 
+----
+
+### **Primera opción:** 
+
+Con "self_contained: TRUE" en el YAML para `r fontawesome::fa("paper-plane")`
+
+--
+
+### **Segunda opción:** 
+
+Alojando tus archivos en un repositorio para `r fontawesome::fa("link")`
+
 ---
 
-# `XaringanExtra`
+#### Pasos para compartir tus diapositivas:
 
-## Encajar diapositivas
+1\. Agrega la opción `self_contained: TRUE` en tu YAML.
 
-## Hacer editables las diapositivas
+2\. En tu repositorio de github, activa la opción de github pages.
 
-## Links para compartir
+<img src="imagenes/git-pages2.png" width="70%"
+alt="git-pages"/>
 
-## A few of my favorite things
+3\. Copia el link de la página. Si tu repositorio y archivo `html` estaba en el link
 
+https://github.com/user/nombre_repositorio/blob/main/archivo_xaringan.html
+
+El link a compartir será: https://user.github.io/nombre_repositorio/archivo_xaringan.html
+
+
+---
+
+### **Tercera opción:**
+
+--
+
+ Con el paquete `XaringanExtra` las puedes incrustar en otros documentos como las que has visto en estas diapositivas. Para esto, debes agregar en tu `setup` lo siguiente:
+ 
+```{r, eval=FALSE}
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin")
+)
+```
+ 
+-- 
+
+Y después en tus documentos:
+
+```{r, eval=FALSE}
+xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", ratio = "16:9", max_width = 600)
+```
+
+O la opción:
+
+```{r, eval=FALSE}
+knitr::include_url("https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", height = "150px")
+```
+
+---
+
+## Ejemplo:
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", ratio = "16:9", max_width = 600)
+```
+
+---
+
+### XaringanExtra
+
+--
+
+#### Vista previa
+
+Con la tecla "O" permite ver todas las diapositivas.
+
+```{r, eval=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+--
+
+#### WebCam
+
+Preciona `W` y `shift + W` `r emo::ji("smirking_face")`.
+
+```{r, eval=FALSE}
+xaringanExtra::use_webcam()
+```
+
+--
+
+#### Copiar chunks
+
+Agrega el boton de copiar los códigos de los chunks.
+
+```{r, eval=FALSE}
+xaringanExtra::use_clipboard()
+```
+
+---
+
+#### Paneles
+
+Crea paneles impresionantes como los usados en el apartado de tablas.
+
+```{r, eval=FALSE}
+xaringanExtra::use_panelset()
+```
+
+--
+
+#### Funcionalidades de los chunks
+
+Funcionalidades de los chunks, pone un triangulito junto a la línea que se señala.
+
+```{r, eval=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+---
+
+#### Diapositivas editables 
+
+Para hacer que aparezca el lápiz y goma.
+
+```{r, eval=FALSE}
+xaringanExtra::use_scribble()
+```
+
+--
+
+Para tener opciones para hacer editable algún chunk.
+
+```{r, eval=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+Por ejemplo `r emo::ji("smirking_face")`:
+
+.pull-left[
+
+```r
+---
 .can-edit.key-likes[
-- thing one
-- thing two
+- Item 1
+- Item 2
+]
+---
+```
 ]
 
+.pull-right[
+
+.can-edit.key-likes[
+- Item 1
+- Item 2
+]
+]
+
+---
+
+# `r fontawesome::fa("book")` Referencias
+
+- [Presentación Rladies Xalapa Xaringan](https://slides.silviacanelon.com/introduccion-xaringan)
+  - [Video presentación R Ladies Xalapa sobre Xaringan](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
+- [Curso de Xaringan avanzado](https://spcanelon.github.io/xaringan-basics-and-beyond/)
+- [Curso CSS freecodecamp](https://www.youtube.com/watch?v=OXGznpKZ_sA&ab_channel=freeCodeCamp.org)
+  - [Repositorio de recursos del curso (CSS)](https://github.com/gitdagray/css_course)
+- [Xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+- [Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
+- [Presentaciones revealjs](https://quarto.org/docs/presentations/revealjs/)
+- [Tema de RLadies Global](https://www.apreshill.com/project/rladies-xaringan/)
+- [Xaringan Extra](https://github.com/gadenbuie/xaringanExtra)
+- [Icons](https://github.com/mitchelloharawild/icons)
+- [Ejemplo de Sydney-Xaringan](https://github.com/garthtarr/sydney_xaringan/tree/master)
+- [`fontawesome`](https://fontawesome.com/)
