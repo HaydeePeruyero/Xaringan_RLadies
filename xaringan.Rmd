@@ -702,7 +702,6 @@ iris %>%
 iris %>%
   head(3)%>%
   DT::datatable()
-
 ```
 ]
 ]
