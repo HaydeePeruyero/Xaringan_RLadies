@@ -38,7 +38,7 @@ library(tidyverse)
 library(xaringanExtra)
 library(icons)
 library(fontawesome)
-library(emo) 
+library(emo)
 
 # set default options
 opts_chunk$set(collapse = TRUE,
@@ -56,9 +56,12 @@ top_icon = function(x) {
 
 knit_engines$set("yaml", "markdown")
 
+# Con la tecla "O" permite ver todas las diapositivas
 xaringanExtra::use_tile_view()
+# Agrega el boton de copiar los códigos de los chunks
 xaringanExtra::use_clipboard()
 
+# Crea paneles impresionantes 
 xaringanExtra::use_panelset()
 
 # Para compartir e incrustar en otro sitio web
@@ -67,6 +70,7 @@ xaringanExtra::style_share_again(
   share_buttons = c("twitter", "linkedin")
 )
 
+# Funcionalidades de los chunks, pone un triangulito junto a la línea que se señala
 xaringanExtra::use_extra_styles(
   hover_code_line = TRUE,         #<<
   mute_unhighlighted_code = TRUE  #<<
@@ -74,8 +78,9 @@ xaringanExtra::use_extra_styles(
 ```
 
 ```{r xaringan-editable, echo=FALSE}
-# Para tener opciones de edición: el lapiz y goma
+# Para tener opciones para hacer editable algun chunk
 xaringanExtra::use_editable(expires = 1)
+# Para hacer que aparezca el lápiz y goma
 xaringanExtra::use_scribble()
 ```
 
@@ -274,6 +279,38 @@ Explicación de qué es quarto! @Sofia
 
 
 ---
+
+# Paquetes necesarios
+
+Antes de comenzar necesitamos realizar las instalaciones correspondientes.
+
+  - Xaringan: 
+```{r, eval = FALSE}
+remotes::install_github('yihui/xaringan')
+```
+
+  - XaringanExtra
+```{r, eval=FALSE}
+# Opción 1
+install.packages("xaringanExtra")
+# Opción 2
+# install.packages("remotes")
+remotes::install_github("gadenbuie/xaringanExtra")
+```
+
+  - Quarto
+  
+  - Icons:
+  
+```{r, eval=FALSE}
+remotes::install_github("mitchelloharawild/icons")
+devtools::install_github("hadley/emo")
+#install.packages("fontawesome")
+#download_fontawesome()
+```
+
+---
+
 class: middle, center
 
 `r fontawesome::fa("file-circle-question", height = "3em")`
@@ -373,6 +410,7 @@ library(xaringanExtra)
 library(icons)
 library(fontawesome) 
 library(emo) 
+library(gt)
 
 # set default options de knitr
 opts_chunk$set(collapse = TRUE, 
@@ -632,22 +670,57 @@ alt="logo-rladies"/>
 
 
 ---
+class: inverse, middle, center
 
-# Elementos de R
-
-## Tablas
-
----
-
-# Plots
+# Elementos de `r fontawesome::fa("r-project", fill = "steelblue")`
 
 ---
 
-# Códigos
+## `r fontawesome::fa("table")` Tablas
 
-Incluir códigos y resaltarlos
+.panelset[
+.panel[.panel-name[Output estándar]
+
+```{r}
+data(iris)
+head(iris)
+```
+]
+
+.panel[.panel-name[Kable (HTML)]
+
+```{r}
+iris %>%
+  head() %>%
+  knitr::kable(format = "html")
+```
+]
+
+.panel[.panel-name[DataTable]
+
+```{r, echo=TRUE}
+iris %>%
+  head(3)%>%
+  DT::datatable()
+
+```
+]
+]
 
 ---
+
+## `r fontawesome::fa("chart-line")` Plots
+
+
+
+---
+
+## `r fontawesome::fa("code")` Códigos
+
+
+
+---
+
 # ¿Cómo compartir nuestras diapositivas?
 
 ---
@@ -660,4 +733,10 @@ Incluir códigos y resaltarlos
 
 ## Links para compartir
 
+## A few of my favorite things
+
+.can-edit.key-likes[
+- thing one
+- thing two
+]
 
