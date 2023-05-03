@@ -9,7 +9,7 @@ format:
             side: left # mostrar menu de herramientas a la izquierda
 ---
 
-## Crear diapositivas {background-color="rgba(135,206,250,0.2)"}
+## YAML 
 :::{style="font-size: 25px"}
 - Yaml: (Yet Another Markdown Language) configura características generales del documento 
 - [Todas las opciones YAML](https://quarto.org/docs/reference/formats/presentations/revealjs.html)

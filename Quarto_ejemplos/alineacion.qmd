@@ -1,0 +1,100 @@
+---
+format: 
+    revealjs: 
+        self-contained: true
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Rladies Morelia" # pie de diapositiva
+        menu: 
+            side: left # mostrar menu de herramientas a la izquierda
+        theme: [default, ../custom.scss]  
+    
+---
+
+## `{.smaller}` {.center}
+<br>
+
+:::{.nonincremental}
+- Opciones cambiar el tamaño del texto de toda la diapositiva 
+
+
+```{.r code-line-numbers="1-6|8"}
+---
+title: "Título"
+format: 
+    revealjs:
+        smaller: true
+---
+
+## Titulo diapositiva {.smaller .center}
+```
+:::
+
+## Ejemplo (texto grande) {.bigger-font}
+:::{.incremental}
+<br>
+
+```{.r}
+## Ejemplo (texto grande) {.bigger-font}
+- Contenido 1
+- Contenido 2
+```
+<br>
+
+- Contenido 1
+- Contenido 2
+:::
+
+
+
+## Ejemplo (texto pequeño) {.smaller}
+:::{.incremental}
+<br>
+
+```{.r}
+## Ejemplo (texto pequeño) {.smaller}
+- Contenido 1
+- Contenido 2
+
+```
+
+<br>
+
+- Contenido 1
+- Contenido 2
+:::
+
+
+## Columnas e imagenes 
+:::{.incremental}
+<br>
+
+```{.r}
+::::{.columns}
+
+::: {.column width="50%"}
+Izquierda
+:::
+
+::: {.column width="50%"}
+![](imagenes/rladies_logo.jpeg){width="50%"}
+:::
+
+::::
+```
+<br>
+
+:::: {.columns }
+
+::: {.column width="50%"}
+:::{.blank_space}
+- Ejemplo izquierda
+:::
+:::
+
+::: {.column width="50%" .fragment}
+![](../imagenes/rladies_logo.jpeg){.center_image}
+:::
+
+::::
+:::

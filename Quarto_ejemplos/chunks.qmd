@@ -9,7 +9,7 @@ format:
             side: left # mostrar menu de herramientas a la izquierda
 ---
 
-## Chunks {background-color="rgba(135,206,250,0.2)"}
+## Chunks {.center}
 
 ```{.r code-line-numbers="|1|2-5|"}
     #```{r code-line-numbers="|1|2-5|"}

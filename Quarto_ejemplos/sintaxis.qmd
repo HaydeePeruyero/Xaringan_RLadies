@@ -10,7 +10,7 @@ format:
         theme: [default, ../custom.scss]  
 ---
 
-## Crear diapositivas {background-color="var(--quarto)"}
+## Crear diapositivas 
 
 <br>
 <br>
@@ -28,7 +28,7 @@ format:
 
 ```
 
-## Diapositivas graduales {background-color="var(--quarto)"}
+## Diapositivas graduales 
 
 ```{.r code-line-numbers="|5|8-13|15-20"}
 ---
@@ -54,7 +54,7 @@ format:
 
 ```
 
-## Notas y pies de página {background-color="var(--quarto)"}
+## Notas y pies de página 
 
 ```{.r code-line-numbers="3|6-8|10-12"}
 ## Título de la diapositiva
