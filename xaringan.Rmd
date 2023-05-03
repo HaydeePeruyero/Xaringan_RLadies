@@ -359,7 +359,7 @@ background-color: var(--quarto)
 # Reveal js
 
 ```{r, echo=FALSE}
-xaringanExtra::embed_xaringan("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html")
+xaringanExtra::embed_xaringan("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/crear_diapositivas.html", ratio="16:7")
 ```
 
 ---
@@ -444,6 +444,16 @@ En los chunks algunas cosas que se pueden especificar son: `{r setup1, include =
   - `highlight.output=c(n, m)`: resaltar líneas n,m del código.
 
 Otras opciones para los chunks están [aquí](https://yihui.org/knitr/options/#chunk-options).
+
+---
+
+background-color: var(--quarto)
+
+# Reveal js
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("https://haydeeperuyero.github.io/Xaringan_RLadies/Quarto_ejemplos/chunks.html", ratio="16:7")
+```
 
 ---
 
