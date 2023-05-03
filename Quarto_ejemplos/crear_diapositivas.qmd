@@ -27,15 +27,4 @@ format:
         menu: 
             side: left # mostrar menu de herramientas a la izquierda
 ---
-
-## Diapositiva 1 
-
-- Contenido 1 
-- Contenido 2 
-
----
-
-- Contenido 1 
-- Contenido 2 
-
 ```

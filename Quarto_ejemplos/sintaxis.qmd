@@ -1,0 +1,85 @@
+---
+format: 
+    revealjs: 
+        self-contained: true
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Rladies Morelia" # pie de diapositiva
+        menu: 
+            side: left # mostrar menu de herramientas a la izquierda
+        theme: [default, ../custom.scss]  
+---
+
+## Crear diapositivas {background-color="var(--quarto)"}
+
+<br>
+<br>
+
+```{.r}
+## Diapositiva 1 
+
+- Contenido 1 
+- Contenido 2 
+
+--- #(opción 2)
+
+- Contenido 1 
+- Contenido 2 
+
+```
+
+## Diapositivas graduales {background-color="var(--quarto)"}
+
+```{.r code-line-numbers="|5|8-13|15-20"}
+---
+title: "Título"
+format:
+  revealjs:
+    incremental: true   
+---
+
+:::{.incremental}
+
+- Contenido 1
+- Contenido 2
+
+:::
+
+::: {.nonincremental}
+
+- Contenido 1
+- Contenido 2
+
+:::
+
+```
+
+## Notas y pies de página {background-color="var(--quarto)"}
+
+```{.r code-line-numbers="3|6-8|10-12"}
+## Título de la diapositiva
+
+- Contenido 1 ^[Rladies et al., 2023]
+- Contenido 2
+
+:::{.notes}
+Buenos días mi nombre es ....
+:::
+
+::: aside
+Nota inferior
+:::
+
+```
+<hr>
+
+- Contenido 1 ^[Rladies et al., 2023]
+- Contenido 2
+
+:::{.notes}
+Buenos días mi nombre es ....
+:::
+
+::: aside
+Nota inferior
+:::
