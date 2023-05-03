@@ -4,8 +4,7 @@ format:
         self-contained: true
         slide-number: c # mostrar solo el número de la diapositiva
         show-slide-number: all # mostrar la numeración para todas las vistas
-        footer: "Reveal js Quarto" # pie de diapositiva
-
+        footer: "Rladies Morelia" # pie de diapositiva
         menu: 
             side: left # mostrar menu de herramientas a la izquierda
 ---

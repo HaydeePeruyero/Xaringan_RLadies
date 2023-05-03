@@ -1,0 +1,21 @@
+---
+format: 
+    revealjs: 
+        self-contained: true
+        slide-number: c # mostrar solo el número de la diapositiva
+        show-slide-number: all # mostrar la numeración para todas las vistas
+        footer: "Rladies Morelia" # pie de diapositiva
+        menu: 
+            side: left # mostrar menu de herramientas a la izquierda
+---
+
+## Chunks {background-color="rgba(135,206,250,0.2)"}
+
+```{.r code-line-numbers="|1|2-5|"}
+    #```{r code-line-numbers="|1|2-5|"}
+    #| echo: true
+    #| warning: false
+    #| eval: false
+    #| width: 9
+    #```
+```
