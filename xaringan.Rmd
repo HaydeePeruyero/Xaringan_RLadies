@@ -1142,7 +1142,7 @@ xaringanExtra::embed_xaringan("Quarto_ejemplos/navegacion.html", max_width = 900
 ---
 
 # `r fontawesome::fa("book")` Referencias
-
+.pull-left[
 - [Presentación Rladies Xalapa Xaringan](https://slides.silviacanelon.com/introduccion-xaringan)
   - [Video presentación R Ladies Xalapa sobre Xaringan](https://www.youtube.com/watch?v=uBXEtM-OHlI&ab_channel=R-LadiesXalapa)
 - [Curso de Xaringan avanzado](https://spcanelon.github.io/xaringan-basics-and-beyond/)
@@ -1156,3 +1156,8 @@ xaringanExtra::embed_xaringan("Quarto_ejemplos/navegacion.html", max_width = 900
 - [Icons](https://github.com/mitchelloharawild/icons)
 - [Ejemplo de Sydney-Xaringan](https://github.com/garthtarr/sydney_xaringan/tree/master)
 - [`fontawesome`](https://fontawesome.com/)
+]
+
+.pull-right[
+  - [Guia de Quarto revealjs](https://quarto.org/docs/presentations/revealjs/)
+]
