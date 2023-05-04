@@ -183,7 +183,7 @@ width="55px"
 --
 
 
-### <img src="imagenes/quarto.png"; width="100px"> [Quarto revealjs](https://quarto.org/docs/presentations/revealjs/): Nuevo sistema de publicación de documentos que pretende integrar tanto R como otros lenguajes de programación (python, Julia, etc.)
+#### <img src="imagenes/quarto.png"; width="100px"> [Quarto revealjs](https://quarto.org/docs/presentations/revealjs/): Nuevo sistema de publicación de documentos que integra  R y otros lenguajes de programación (python, Julia, etc.)
 
 ---
 
@@ -302,7 +302,7 @@ install.packages("xaringanExtra")
 remotes::install_github("gadenbuie/xaringanExtra")
 ```
 
-  - Quarto
+  - Quarto: Preinstalado con RStudio >= v2023.03
   
   - Icons:
   
@@ -357,7 +357,7 @@ class: middle, center
 
 background-color: var(--quarto)
 
-# Quarto Reveal js
+# Quarto revealjs
 
 .pull-left[
 #### 1\. `r emo::ji("page_facing_up")` New File
@@ -414,7 +414,7 @@ output:
 
 background-color: var(--quarto)
 
-# Reveal js
+# Quarto revealjs: YAML
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("Quarto_ejemplos/crear_diapositivas.html", max_width = 900)
@@ -471,7 +471,7 @@ Otras opciones para los chunks están [aquí](https://yihui.org/knitr/options/#c
 
 background-color: var(--quarto)
 
-# Reveal js
+# Quarto revealjs: opciones de chunks
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("Quarto_ejemplos/chunks.html", max_width = 900)
@@ -538,7 +538,7 @@ Xaringan ocupa tanto código RMarkdown como código de `remarks.js` y `css`.
 ---
 background-color: var(--quarto)
 
-# Sintaxis Reveal js
+# Quarto revealjs: Sintaxis
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("Quarto_ejemplos/sintaxis.html", max_width = 900)
@@ -569,6 +569,38 @@ background-size: 15%
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 ```
 
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: diapositiva de título
+
+
+- Para omitir la diapositiva de título, no se agrega la opción `title` en el YAML y se puede configurar como cualquier diapositiva.
+- Para configurar desde el YAML: 
+
+.pull-left[
+```{r eval=FALSE}
+---
+title: "Titulo de la presentación"
+subtitle: "Subtítulo"
+title-slide-attributes:
+  data-background-image: GOPR0710.JPG
+  data-background-size: contain
+  data-background-opacity: "0.85"
+  
+format: 
+    revealjs:
+        theme: [default, ../custom.scss]
+---
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("Quarto_ejemplos/diapo_titulo.html", max_width = 500)
+```
+
+]
 
 ---
 
@@ -622,7 +654,7 @@ Donde **middle** define la posición vertical y **center** la posición horizont
 
 background-color: var(--quarto)
 
-# Alineación Reveal js
+# Quarto revealjs: alineación 
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("Quarto_ejemplos/alineacion.html", max_width = 900)
@@ -911,6 +943,14 @@ z <- x+y #<<
 
 Las opciones de los chunks en los 3 casos son solo para ejemplo, recordar que `eval=FALSE` realizará que no se evalúe el código.
 
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: resaltar código
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("Quarto_ejemplos/codigo_resaltado.html", max_width = 900)
+```
 
 ---
 
@@ -1025,6 +1065,7 @@ Agrega el boton de copiar los códigos de los chunks.
 ```{r, eval=FALSE}
 xaringanExtra::use_clipboard()
 ```
+]
 
 ---
 
@@ -1088,6 +1129,15 @@ Por ejemplo `r emo::ji("smirking_face")`:
 - Item 2
 ]
 ]
+
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: Navegación 
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("Quarto_ejemplos/navegacion.html", max_width = 900)
+```
 
 ---
 

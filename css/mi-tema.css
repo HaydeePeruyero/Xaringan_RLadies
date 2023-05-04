@@ -89,6 +89,7 @@ a, a > code {
 
 .fondo-blanco { background-color: #FFFFFF }
 
+
 /*-- ENLACES/ANCLAS --*/
 a {
   border-bottom:      3px solid var(--morado-claro);
@@ -276,5 +277,4 @@ slides > slide {
   height: 90%;
   overflow-y: scroll;
 }
-
 

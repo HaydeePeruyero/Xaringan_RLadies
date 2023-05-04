@@ -58,4 +58,18 @@ $code-block-font-size: 20px;
     --my-pink:           #c09090;
     --quarto:            #dcf0fd;
     }
+
+.title {
+    background-color: rgba(255, 255, 255, 0.6);
+      
+    }
+      
+.subtitle{
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+        position: relative;
+        top: -0.450em;
+        text-align: center;
+  }
 /*-- scss:rules --*/

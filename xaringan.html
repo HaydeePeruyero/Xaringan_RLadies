@@ -1727,7 +1727,7 @@ background-color: inherit;
 })(window, document)
 </script>
     <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xe937c7947d7427289ed1e8631b7b5a7","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xb3a9ffd894b4e7fb0803a7c1df4fbc7","expires":1}</script>
     <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.himalaya = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
@@ -6836,7 +6836,7 @@ width=&quot;55px&quot;
 --
 
 
-### &lt;img src=&quot;imagenes/quarto.png&quot;; width=&quot;100px&quot;&gt; [Quarto revealjs](https://quarto.org/docs/presentations/revealjs/): Nuevo sistema de publicación de documentos que pretende integrar tanto R como otros lenguajes de programación (python, Julia, etc.)
+#### &lt;img src=&quot;imagenes/quarto.png&quot;; width=&quot;100px&quot;&gt; [Quarto revealjs](https://quarto.org/docs/presentations/revealjs/): Nuevo sistema de publicación de documentos que integra  R y otros lenguajes de programación (python, Julia, etc.)
 
 ---
 
@@ -6953,7 +6953,7 @@ install.packages(&quot;xaringanExtra&quot;)
 remotes::install_github(&quot;gadenbuie/xaringanExtra&quot;)
 ```
 
-  - Quarto
+  - Quarto: Preinstalado con RStudio &gt;= v2023.03
   
   - Icons:
   
@@ -7009,7 +7009,7 @@ class: middle, center
 
 background-color: var(--quarto)
 
-# Quarto Reveal js
+# Quarto revealjs
 
 .pull-left[
 #### 1\. 📄 New File
@@ -7067,7 +7067,7 @@ output:
 
 background-color: var(--quarto)
 
-# Reveal js
+# Quarto revealjs: YAML
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
 <iframe src="Quarto_ejemplos/crear_diapositivas.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
@@ -7126,7 +7126,7 @@ Otras opciones para los chunks están [aquí](https://yihui.org/knitr/options/#c
 
 background-color: var(--quarto)
 
-# Reveal js
+# Quarto revealjs: opciones de chunks
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
 <iframe src="Quarto_ejemplos/chunks.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
@@ -7195,7 +7195,7 @@ Xaringan ocupa tanto código RMarkdown como código de `remarks.js` y `css`.
 ---
 background-color: var(--quarto)
 
-# Sintaxis Reveal js
+# Quarto revealjs: Sintaxis
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
 <iframe src="Quarto_ejemplos/sintaxis.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
@@ -7228,6 +7228,40 @@ background-size: 15%
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 ```
 
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: diapositiva de título
+
+
+- Para omitir la diapositiva de título, no se agrega la opción `title` en el YAML y se puede configurar como cualquier diapositiva.
+- Para configurar desde el YAML: 
+
+.pull-left[
+
+```r
+---
+title: &quot;Titulo de la presentación&quot;
+subtitle: &quot;Subtítulo&quot;
+title-slide-attributes:
+  data-background-image: GOPR0710.JPG
+  data-background-size: contain
+  data-background-opacity: &quot;0.85&quot;
+  
+format: 
+    revealjs:
+        theme: [default, ../custom.scss]
+---
+```
+]
+
+.pull-right[
+<div class="shareagain" style="min-width:300px;margin:1em auto;max-width:500px;" data-exeternal="1">
+<iframe src="Quarto_ejemplos/diapo_titulo.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+
+]
 
 ---
 
@@ -7282,7 +7316,7 @@ Donde **middle** define la posición vertical y **center** la posición horizont
 
 background-color: var(--quarto)
 
-# Alineación Reveal js
+# Quarto revealjs: alineación 
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
 <iframe src="Quarto_ejemplos/alineacion.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
@@ -7315,7 +7349,7 @@ Existen tres formas de poner imágenes en una diapositiva.
 
 
   - Es la forma estándar de poner imágenes en Markdown.
-  - No es muy flexible 😿 .
+  - No es muy flexible 😞 .
   - El tamaño de salida de la imagen depende de la imagen. 
   - Se puede cambiar el tamaño de la imagen con  [macros personalizados](https://slides.yihui.org/xaringan/#33) o con las opciones `{width=&#39;500px&#39;}` 😏
 
@@ -7341,7 +7375,7 @@ knitr::include_graphics(&quot;imagenes/rladies_logo.jpeg&quot;)
 ```
 
 
-  - Bastante flexible 😃 .
+  - Bastante flexible 😄 .
   - El bloque de código toma espacio.
   - Permite incluir texto alternativo.
   - Se puede configurar dimensión, posición con los atributos del chunk 😏.
@@ -7495,8 +7529,8 @@ iris %&gt;%
   DT::datatable()
 ```
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-dc8fdcce3674ec6ce906" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-dc8fdcce3674ec6ce906">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],[5.1,4.9,4.7],[3.5,3,3.2],[1.4,1.4,1.3],[0.2,0.2,0.2],["setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-28d6d012e6345efa786e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-28d6d012e6345efa786e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],[5.1,4.9,4.7],[3.5,3,3.2],[1.4,1.4,1.3],[0.2,0.2,0.2],["setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 ]
 ]
 
@@ -7513,12 +7547,12 @@ iris %&gt;%
   gt::tab_spanner(label = &quot;Sepalo&quot;, columns = vars(Sepal.Length,Sepal.Width))
 ```
 
-<div id="wiwqsguyog" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jgzvaxzimi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#wiwqsguyog .gt_table {
+#jgzvaxzimi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -7543,7 +7577,7 @@ iris %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_heading {
+#jgzvaxzimi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -7555,12 +7589,12 @@ iris %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_caption {
+#jgzvaxzimi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wiwqsguyog .gt_title {
+#jgzvaxzimi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -7572,7 +7606,7 @@ iris %&gt;%
   border-bottom-width: 0;
 }
 
-#wiwqsguyog .gt_subtitle {
+#jgzvaxzimi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -7584,13 +7618,13 @@ iris %&gt;%
   border-top-width: 0;
 }
 
-#wiwqsguyog .gt_bottom_border {
+#jgzvaxzimi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_col_headings {
+#jgzvaxzimi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7605,7 +7639,7 @@ iris %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_col_heading {
+#jgzvaxzimi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7625,7 +7659,7 @@ iris %&gt;%
   overflow-x: hidden;
 }
 
-#wiwqsguyog .gt_column_spanner_outer {
+#jgzvaxzimi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7637,15 +7671,15 @@ iris %&gt;%
   padding-right: 4px;
 }
 
-#wiwqsguyog .gt_column_spanner_outer:first-child {
+#jgzvaxzimi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wiwqsguyog .gt_column_spanner_outer:last-child {
+#jgzvaxzimi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wiwqsguyog .gt_column_spanner {
+#jgzvaxzimi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -7657,7 +7691,7 @@ iris %&gt;%
   width: 100%;
 }
 
-#wiwqsguyog .gt_group_heading {
+#jgzvaxzimi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7683,7 +7717,7 @@ iris %&gt;%
   text-align: left;
 }
 
-#wiwqsguyog .gt_empty_group_heading {
+#jgzvaxzimi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -7698,15 +7732,15 @@ iris %&gt;%
   vertical-align: middle;
 }
 
-#wiwqsguyog .gt_from_md > :first-child {
+#jgzvaxzimi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wiwqsguyog .gt_from_md > :last-child {
+#jgzvaxzimi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wiwqsguyog .gt_row {
+#jgzvaxzimi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7725,7 +7759,7 @@ iris %&gt;%
   overflow-x: hidden;
 }
 
-#wiwqsguyog .gt_stub {
+#jgzvaxzimi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7738,7 +7772,7 @@ iris %&gt;%
   padding-right: 5px;
 }
 
-#wiwqsguyog .gt_stub_row_group {
+#jgzvaxzimi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7752,11 +7786,11 @@ iris %&gt;%
   vertical-align: top;
 }
 
-#wiwqsguyog .gt_row_group_first td {
+#jgzvaxzimi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wiwqsguyog .gt_summary_row {
+#jgzvaxzimi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7766,16 +7800,16 @@ iris %&gt;%
   padding-right: 5px;
 }
 
-#wiwqsguyog .gt_first_summary_row {
+#jgzvaxzimi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_first_summary_row.thick {
+#jgzvaxzimi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wiwqsguyog .gt_last_summary_row {
+#jgzvaxzimi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7785,7 +7819,7 @@ iris %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_grand_summary_row {
+#jgzvaxzimi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7795,7 +7829,7 @@ iris %&gt;%
   padding-right: 5px;
 }
 
-#wiwqsguyog .gt_first_grand_summary_row {
+#jgzvaxzimi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7805,11 +7839,11 @@ iris %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_striped {
+#jgzvaxzimi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wiwqsguyog .gt_table_body {
+#jgzvaxzimi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7818,7 +7852,7 @@ iris %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_footnotes {
+#jgzvaxzimi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7832,7 +7866,7 @@ iris %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_footnote {
+#jgzvaxzimi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -7841,7 +7875,7 @@ iris %&gt;%
   padding-right: 5px;
 }
 
-#wiwqsguyog .gt_sourcenotes {
+#jgzvaxzimi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7855,7 +7889,7 @@ iris %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#wiwqsguyog .gt_sourcenote {
+#jgzvaxzimi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -7863,64 +7897,64 @@ iris %&gt;%
   padding-right: 5px;
 }
 
-#wiwqsguyog .gt_left {
+#jgzvaxzimi .gt_left {
   text-align: left;
 }
 
-#wiwqsguyog .gt_center {
+#jgzvaxzimi .gt_center {
   text-align: center;
 }
 
-#wiwqsguyog .gt_right {
+#jgzvaxzimi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wiwqsguyog .gt_font_normal {
+#jgzvaxzimi .gt_font_normal {
   font-weight: normal;
 }
 
-#wiwqsguyog .gt_font_bold {
+#jgzvaxzimi .gt_font_bold {
   font-weight: bold;
 }
 
-#wiwqsguyog .gt_font_italic {
+#jgzvaxzimi .gt_font_italic {
   font-style: italic;
 }
 
-#wiwqsguyog .gt_super {
+#jgzvaxzimi .gt_super {
   font-size: 65%;
 }
 
-#wiwqsguyog .gt_footnote_marks {
+#jgzvaxzimi .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#wiwqsguyog .gt_asterisk {
+#jgzvaxzimi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wiwqsguyog .gt_indent_1 {
+#jgzvaxzimi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wiwqsguyog .gt_indent_2 {
+#jgzvaxzimi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wiwqsguyog .gt_indent_3 {
+#jgzvaxzimi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wiwqsguyog .gt_indent_4 {
+#jgzvaxzimi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wiwqsguyog .gt_indent_5 {
+#jgzvaxzimi .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -8107,6 +8141,15 @@ y &lt;- 2
 
 Las opciones de los chunks en los 3 casos son solo para ejemplo, recordar que `eval=FALSE` realizará que no se evalúe el código.
 
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: resaltar código
+
+<div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
+<iframe src="Quarto_ejemplos/codigo_resaltado.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
 
 ---
 
@@ -8228,6 +8271,7 @@ Agrega el boton de copiar los códigos de los chunks.
 ```r
 xaringanExtra::use_clipboard()
 ```
+]
 
 ---
 
@@ -8295,6 +8339,16 @@ Por ejemplo 😏:
 - Item 2
 ]
 ]
+
+---
+background-color: var(--quarto)
+
+## Quarto revealjs: Navegación 
+
+<div class="shareagain" style="min-width:300px;margin:1em auto;max-width:900px;" data-exeternal="1">
+<iframe src="Quarto_ejemplos/navegacion.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
 
 ---
 

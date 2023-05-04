@@ -1,0 +1,25 @@
+---
+format: 
+    revealjs:
+        self-contained: true
+        theme: [default, ../custom.scss]
+---
+
+## Navegación 
+
+`M` = Menu de navegación
+
+![](../imagenes/menu.png)
+
+## Navegación
+
+`O` = Vista general de la presentación
+`Alt`+`Ctrl` = Zoom
+
+![](../imagenes/overview.png)
+
+## Navegación
+
+`S` = Visión del presentador
+
+![](../imagenes/speaker_view.png)

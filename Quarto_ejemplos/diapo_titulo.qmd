@@ -1,0 +1,13 @@
+---
+title: "Titulo de la presentación"
+subtitle: "Subtítulo"
+title-slide-attributes:
+  data-background-image: GOPR0710.JPG
+  data-background-size: contain
+  data-background-opacity: "0.85"
+  
+format: 
+    revealjs:
+        self-contained: true
+        theme: [default, ../custom.scss]
+---
