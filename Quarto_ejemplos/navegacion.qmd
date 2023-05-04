@@ -23,3 +23,17 @@ format:
 `S` = Visión del presentador
 
 ![](../imagenes/speaker_view.png)
+
+## Pizarrón
+
+*Nota: Solo se puede usar el pizarrón cuand `self-contained: false`*
+
+```{.r}
+---
+title: "Presentación"
+format:
+  revealjs:
+    chalkboard:
+      src: drawings.json
+---
+```
