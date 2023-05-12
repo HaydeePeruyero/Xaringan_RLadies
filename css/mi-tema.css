@@ -181,6 +181,17 @@ hr {
   float: left;
 }
 
+.right-up {
+  width: 50%;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  right: 5%;
+  z-index: 9999;
+  top: 2%;
+  bottom: 2%;
+}
+
 
 /******************
  * Coloured content boxes

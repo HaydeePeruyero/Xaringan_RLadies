@@ -122,7 +122,7 @@ class: middle, center
 
 .left-col[
 
-### Sofía
+### <img src="imagenes/acorn.png" width="40px"> Sofía
 
 Estudiante de maestría en Ciencias Biológicas
 
@@ -279,8 +279,25 @@ background-color: var(--quarto)
 
 # Quarto reveal js
 
-Explicación de qué es quarto! @Sofia
+.pull-left[
+  - Quarto es un sistema open-source de publicaciones científicas y técnicas construido a partir de Pandoc.
 
+**Ventajas**
+  - No depende de un lenguaje de programación en particular 
+  - Interfaz de línea de comandos
+  - Muchas funciones ya vienen listas para usarse 
+  
+**Rmarkdown**
+<img src="imagenes/quarto_rmarkdown.png" width="100%">
+
+]
+.right-up[
+**Quarto**
+<img src="imagenes/quarto_R.png" width="90%">
+<img src="imagenes/quarto_jupyter.png" width="90%">
+<img src="imagenes/quarto_jupyter2.png" width="90%">
+<br>
+]
 
 ---
 
@@ -1065,7 +1082,7 @@ Agrega el boton de copiar los códigos de los chunks.
 ```{r, eval=FALSE}
 xaringanExtra::use_clipboard()
 ```
-]
+
 
 ---
 
