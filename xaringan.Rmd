@@ -300,10 +300,7 @@ background-color: var(--quarto)
 ]
 
 ---
-
-# Paquetes necesarios
-
-Antes de comenzar necesitamos realizar las instalaciones correspondientes.
+### Paquetes necesarios
 
   - Xaringan: 
 ```{r, eval = FALSE}
@@ -736,7 +733,7 @@ knitr::include_graphics("imagenes/rladies_logo.jpeg")
 .pull-right[
 
 
-```{r imagen-knitr, fig.dim=c(7,5), fig.cap="Logo de R-Ladies Morelia", fig.alt="Logo de R-Ladies Morelia"}
+```{r imagen-knitr, fig.dim=c(5,3), fig.cap="Logo de R-Ladies Morelia", fig.alt="Logo de R-Ladies Morelia"}
 knitr::include_graphics("imagenes/rladies_logo.jpeg")
 ```
 
@@ -1051,6 +1048,38 @@ xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_R
 
 ---
 
+# LaTeX
+
+Xaringan soporta incluir código Latex para texto matemático en la forma usual. Las expresiones matemáticas se encierran entre `$`, solo se debe tener cuidado de que no queden junto a texto normal porque de lo contrario se procesará bien. Por ejemplo: 
+
+`$S = \frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x}) (x_{i}-\bar{x}) ^{T}$` producirá: 
+
+$S = \frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x}) (x_{i}-\bar{x}) ^{T}$
+
+
+Para incluir ecuaciones centradas, la forma de hacerlo es encerrarlas entre doble `$$`. Por ejemplo:
+
+.pull-left[
+`$$\left( \begin{matrix}`
+`\sigma_1^2 & \sigma_{12} & \cdots & \sigma_{1n} \\`
+`\sigma_{21} & \sigma_2^2 & \cdots & \sigma_{2n} \\`
+`\vdots & \vdots & \ddots & \vdots \\`
+`\sigma_{n1} & \sigma_{n2} & \cdots & \sigma_{n}^2 `
+`\end{matrix} \right)$$` producirá:
+]
+
+.pull-right[
+$$\left( \begin{matrix}
+\sigma_1^2 & \sigma_{12} & \cdots & \sigma_{1n} \\
+\sigma_{21} & \sigma_2^2 & \cdots & \sigma_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\sigma_{n1} & \sigma_{n2} & \cdots & \sigma_{n}^2 
+\end{matrix} \right)$$
+]
+
+
+---
+
 ### XaringanExtra
 
 --
@@ -1168,13 +1197,13 @@ xaringanExtra::embed_xaringan("Quarto_ejemplos/navegacion.html", max_width = 900
 - [Xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html)
 - [Rmarkdown con Latex](https://github.com/HaydeePeruyero/Rmarkdown_and_LaTeX)
 - [Presentaciones revealjs](https://quarto.org/docs/presentations/revealjs/)
+]
+
+.pull-right[
 - [Tema de RLadies Global](https://www.apreshill.com/project/rladies-xaringan/)
 - [Xaringan Extra](https://github.com/gadenbuie/xaringanExtra)
 - [Icons](https://github.com/mitchelloharawild/icons)
 - [Ejemplo de Sydney-Xaringan](https://github.com/garthtarr/sydney_xaringan/tree/master)
 - [`fontawesome`](https://fontawesome.com/)
-]
-
-.pull-right[
-  - [Guia de Quarto revealjs](https://quarto.org/docs/presentations/revealjs/)
+- [Guia de Quarto revealjs](https://quarto.org/docs/presentations/revealjs/)
 ]
