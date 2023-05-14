@@ -1546,7 +1546,7 @@ left: 6px;
 })()
 </script>
     <style type="text/css">.remark-code-line:hover {font-weight: bold;opacity: 1 !important;}.remark-code-line:hover:before {content: "\25B6";color: #6d7e8a;position: absolute;transform: translateX(-1.2em);animation: hover 0.66s alternate 8 cubic-bezier(0.445, 0.05, 0.55, 0.95);}@keyframes hover {0% {transform: translateX(-1.2em);}100% {transform: translateX(-0.8em);}}.remark-code-has-line-highlighted .remark-code-line:not(.remark-code-line-highlighted) {opacity: 0.4;}.remark-code-line-highlighted {background-color: inherit;}</style>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x92777b9f0bd403ea975852f216aad88","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x36b07ce7217465bb01f79fc0f1e3223","expires":1}</script>
     <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.himalaya = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
@@ -3495,7 +3495,7 @@ Estudiante de maestría en Ciencias Biológicas
 Estudiante de Lic. en Ecología 
 ENES Morelia, UNAM
 
-
+Lab. Genética de la Conservación 
 
 ]
 
@@ -3852,7 +3852,6 @@ background-size: 15%
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 ```
 
-
 ---
 
 background-color: var(--Purple)
@@ -3867,40 +3866,127 @@ class: middle, center
 background-color: var(--my-pink)
 # <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Ubicación de texto
 ----
-## Alinear diapositiva entera
 
 Para definir la **alineación** de los elementos de la diapositiva tenemos varias opciones:
 
+--
+
 <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.9 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z"/></svg>
 
-```r
+## Alinear diapositiva entera
+```{{r}}
 #class: middle, center
 ```
 --
 Donde **middle** define la posición vertical y **center** la posición horizontal
 
 ---
-# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Ubicación de texto
+class: middle, center
+Ubicación de texto
+
+<svg aria-hidden="true" role="img" viewBox="0 0 320 512" style="height:1em;width:0.62em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8L54.6 150.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L40.2 74.5C67.5 47.3 104.4 32 142.9 32C223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L200.2 234.5c15.2-15.2 23.8-35.9 23.8-57.4c0-44.8-36.3-81.1-81.1-81.1z"/></svg>
+
 
 ## Alinear solo parte del texto
 
---- 
+.left[Abarcamos toda la diapositiva, poniendo una parte del texto en la izquierda]
 
-# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Ubicación de texto
+--
 
-## Columnas con `pull-left` y `pull-right`
+.right[Y posteriormente complementamos con texto a la derecha]
+
+--
+
+----
+
+.center[También podemos agregar texto en el centro, aunque para esta opción podemos usar solo una de las alineaciones]
+
+--
+
+
+```r
+#.left[Inserta aquí] Añade texto a la **izquierda**
+#.center[Inserta aquí] Añade texto al **centro**
+#.right[Inserta aquí] Añade texto a la **derecha**
+```
+---
+class: middle, center
+
+Ubicación de texto
+
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7 14.3-32 32-32H336c13.2 0 25 8.1 29.8 20.4s1.5 26.3-8.2 35.2L226.3 208H248c75.1 0 136 60.9 136 136s-60.9 136-136 136H169.4c-42.4 0-81.2-24-100.2-61.9l-1.9-3.8c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l1.9 3.8c8.1 16.3 24.8 26.5 42.9 26.5H248c39.8 0 72-32.2 72-72s-32.2-72-72-72H144c-13.2 0-25-8.1-29.8-20.4s-1.5-26.3 8.2-35.2L253.7 96H96C78.3 96 64 81.7 64 64z"/></svg>
+
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Columnas con `pull-left` y `pull-right`
+----
+#Generamos clases para organizar por columnas, donde: 
+
+--
+.pull-left[
+* Abarca el 47% izquierdo de la diapositiva
+
+* `.pull-left[]` _jalar-izquierda_  
+
+* Puede incluir imagenes
+
+![Logo de RLadies](data:image/png;base64,#imagenes/rladies_logo.jpeg)
+]
+--
+.pull-right[
+* No es obligatorio ser complementado a la derecha
+
+* `.pull-right[]` _jalar-derecha_ 
+
+* Abarca el otro 47%
+]
+--
+----
+.center[.morado-claro[Y puede incluir otras alineaciones 😄]]
 
 ---
+background-color: var(--Purple)
+class: middle, center
 
-# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Ubicación de texto
+Ubicación de texto
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M189 77.6c7.5-16 .7-35.1-15.3-42.6s-35.1-.7-42.6 15.3L3 322.4c-4.7 9.9-3.9 21.5 1.9 30.8S21 368 32 368H256v80c0 17.7 14.3 32 32 32s32-14.3 32-32V368h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H320V160c0-17.7-14.3-32-32-32s-32 14.3-32 32V304H82.4L189 77.6z"/></svg>
 
-## Columnas con `left-column` y `right-column`
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Columnas con `left-column` y `right-column`
+
+Divide el texto de la diapositiva en dos columnas
+
+--
+
+.left-column[
+* **`.left-column[]` _columna-izquierda_ coloca  una columna a la izquierda**
+
+* Tiene un 20% de ancho de la diapositiva
+
+* Y el texto es un poco más claro.
+]
+
+-- 
+.right-column[
+* **`.right-column[]` _columna-derecha_ coloca la columna derecha
+
+* Tiene un 75% de ancho de la diapositiva
+
+- Tambien tiene un _poquito_ de relleno por arriba
+
+- Estan fijas para la diapositiva entera
+
+--
+----
+
+.center[Estas clases de columnas estan diseñadas para usarse juntas
+]
+
 
 ---
+class: middle, center
+Ubicación de texto
 
-# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Ubicación de texto
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"/></svg> Columnas con clase `css`
 
-## Columnas con clase `css`
+
 
 ---
 
@@ -3928,7 +4014,7 @@ Existen tres formas de poner imágenes en una diapositiva.
 
 
   - Es la forma estándar de poner imágenes en Markdown.
-  - No es muy flexible 😭 .
+  - No es muy flexible 😢 .
   - El tamaño de salida de la imagen depende de la imagen. 
   - Se puede cambiar el tamaño de la imagen con  [macros personalizados](https://slides.yihui.org/xaringan/#33) o con las opciones `{width=&#39;500px&#39;}` 😏
 
@@ -3954,7 +4040,7 @@ knitr::include_graphics(&quot;imagenes/rladies_logo.jpeg&quot;)
 ```
 
 
-  - Bastante flexible 😆 .
+  - Bastante flexible 😀 .
   - El bloque de código toma espacio.
   - Permite incluir texto alternativo.
   - Se puede configurar dimensión, posición con los atributos del chunk 😏.
@@ -4003,9 +4089,56 @@ alt=&quot;logo-rladies&quot;/&gt;
 
 
 ---
+class: middle, center
 
-# Fondos
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M152 120c-26.51 0-48 21.49-48 48s21.49 48 48 48s48-21.49 48-48S178.5 120 152 120zM447.1 32h-384C28.65 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM463.1 409.3l-136.8-185.9C323.8 218.8 318.1 216 312 216c-6.113 0-11.82 2.768-15.21 7.379l-106.6 144.1l-37.09-46.1c-3.441-4.279-8.934-6.809-14.77-6.809c-5.842 0-11.33 2.529-14.78 6.809l-75.52 93.81c0-.0293 0 .0293 0 0L47.99 96c0-8.822 7.178-16 16-16h384c8.822 0 16 7.178 16 16V409.3z"/></svg> Imagenes
 
+También hay varias formas de seleccionar una imagen de fondo.
+
+- `background-image:` (_imagen del fondo_)
+----
+  - `url(https://enlaceweb.aqui)` --&gt; imagen del web
+  - `url(img/jacarandas.jpg)` --&gt; imagen local, usando rutas de archivos relativas
+  
+--
+----
+.right[.morado-claro[ejemplo de `background-image` <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg> ]]
+---
+background-image: url(rladies_logo.jpeg)
+
+class: middle, center, inverse
+
+# **background-image**
+***Sin indicar tamaño del fondo***
+---
+class: middle, center
+
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M152 120c-26.51 0-48 21.49-48 48s21.49 48 48 48s48-21.49 48-48S178.5 120 152 120zM447.1 32h-384C28.65 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM463.1 409.3l-136.8-185.9C323.8 218.8 318.1 216 312 216c-6.113 0-11.82 2.768-15.21 7.379l-106.6 144.1l-37.09-46.1c-3.441-4.279-8.934-6.809-14.77-6.809c-5.842 0-11.33 2.529-14.78 6.809l-75.52 93.81c0-.0293 0 .0293 0 0L47.99 96c0-8.822 7.178-16 16-16h384c8.822 0 16 7.178 16 16V409.3z"/></svg> Imagenes
+
+- `background-size:` (_tamaño de la imagen del fondo_)
+--
+----
+.right[.morado-claro[ejemplo de `background-size` <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg> ]]  
+---
+
+
+    - `cover` --&gt; (_cubrir_) cambia la escala y recorta sin que quede espacio en blanco
+    - `contain` --&gt; (_contener_) cambia la escala solamente
+--
+----
+.right[.morado-claro[ejemplo de `background-size` <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg> ]]   
+
+
+---
+class: middle, center
+
+## <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M152 120c-26.51 0-48 21.49-48 48s21.49 48 48 48s48-21.49 48-48S178.5 120 152 120zM447.1 32h-384C28.65 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM463.1 409.3l-136.8-185.9C323.8 218.8 318.1 216 312 216c-6.113 0-11.82 2.768-15.21 7.379l-106.6 144.1l-37.09-46.1c-3.441-4.279-8.934-6.809-14.77-6.809c-5.842 0-11.33 2.529-14.78 6.809l-75.52 93.81c0-.0293 0 .0293 0 0L47.99 96c0-8.822 7.178-16 16-16h384c8.822 0 16 7.178 16 16V409.3z"/></svg> Imagenes
+
+- `background-position:`  (_posición de la imagen del fondo_) [experimenta con esta propiedad](https://css-tricks.com/almanac/properties/b/background-position/)
+
+--
+----
+.right[.morado-claro[ejemplo de `background-size` <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg> ]]
 
 ---
 
