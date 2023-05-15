@@ -139,7 +139,7 @@ Estudiante de maestría en Ciencias Biológicas
 Estudiante de Lic. en Ecología 
 ENES Morelia, UNAM
 
-
+Lab. Genética de la Conservación 
 
 ]
 
@@ -583,6 +583,7 @@ background-size: 15%
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 ```
 
+<<<<<<< HEAD
 ---
 background-color: var(--quarto)
 
@@ -616,6 +617,8 @@ xaringanExtra::embed_xaringan("Quarto_ejemplos/diapo_titulo.html", max_width = 5
 
 ]
 
+=======
+>>>>>>> Fernanda
 ---
 
 background-color: var(--Purple)
@@ -630,39 +633,126 @@ class: middle, center
 background-color: var(--my-pink)
 # `r fontawesome::fa("table-columns")` Ubicación de texto
 ----
-## Alinear diapositiva entera
 
 Para definir la **alineación** de los elementos de la diapositiva tenemos varias opciones:
 
+--
+
 `r fontawesome::fa("1")`
-```{r}
+
+## Alinear diapositiva entera
+```{{r}}
 #class: middle, center
 ```
 --
 Donde **middle** define la posición vertical y **center** la posición horizontal
 
 ---
-# `r fontawesome::fa("table-columns")` Ubicación de texto
+class: middle, center
+Ubicación de texto
+
+`r fontawesome::fa("2")`
+
 
 ## Alinear solo parte del texto
 
---- 
+.left[Abarcamos toda la diapositiva, poniendo una parte del texto en la izquierda]
 
-# `r fontawesome::fa("table-columns")` Ubicación de texto
+--
 
-## Columnas con `pull-left` y `pull-right`
+.right[Y posteriormente complementamos con texto a la derecha]
+
+--
+
+----
+
+.center[También podemos agregar texto en el centro, aunque para esta opción podemos usar solo una de las alineaciones]
+
+--
+
+```{r}
+#.left[Inserta aquí] Añade texto a la **izquierda**
+#.center[Inserta aquí] Añade texto al **centro**
+#.right[Inserta aquí] Añade texto a la **derecha**
+```
+---
+class: middle, center
+
+Ubicación de texto
+
+`r fontawesome::fa("3")`
+
+## `r fontawesome::fa("table-columns")` Columnas con `pull-left` y `pull-right`
+----
+#Generamos clases para organizar por columnas, donde: 
+
+--
+.pull-left[
+* Abarca el 47% izquierdo de la diapositiva
+
+* `.pull-left[]` _jalar-izquierda_  
+
+* Puede incluir imagenes
+
+![Logo de RLadies](imagenes/rladies_logo.jpeg)
+]
+--
+.pull-right[
+* No es obligatorio ser complementado a la derecha
+
+* `.pull-right[]` _jalar-derecha_ 
+
+* Abarca el otro 47%
+]
+--
+----
+.center[.morado-claro[Y puede incluir otras alineaciones `r emo::ji("smile")`]]
 
 ---
+background-color: var(--Purple)
+class: middle, center
 
-# `r fontawesome::fa("table-columns")` Ubicación de texto
+Ubicación de texto
+`r fontawesome::fa("4")`
 
-## Columnas con `left-column` y `right-column`
+## `r fontawesome::fa("table-columns")` Columnas con `left-column` y `right-column`
+
+Divide el texto de la diapositiva en dos columnas
+
+--
+
+.left-column[
+* **`.left-column[]` _columna-izquierda_ coloca  una columna a la izquierda**
+
+* Tiene un 20% de ancho de la diapositiva
+
+* Y el texto es un poco más claro.
+]
+
+-- 
+.right-column[
+* **`.right-column[]` _columna-derecha_ coloca la columna derecha
+
+* Tiene un 75% de ancho de la diapositiva
+
+- Tambien tiene un _poquito_ de relleno por arriba
+
+- Estan fijas para la diapositiva entera
+
+--
+----
+
+.center[Estas clases de columnas estan diseñadas para usarse juntas
+]
+
 
 ---
+class: middle, center
+Ubicación de texto
 
-# `r fontawesome::fa("table-columns")` Ubicación de texto
+## `r fontawesome::fa("table-columns")` Columnas con clase `css`
 
-## Columnas con clase `css`
+
 
 ---
 
@@ -766,9 +856,56 @@ alt="logo-rladies"/>
 
 
 ---
+class: middle, center
 
-# Fondos
+## `r fontawesome::fa("image")` Imagenes
 
+También hay varias formas de seleccionar una imagen de fondo.
+
+- `background-image:` (_imagen del fondo_)
+----
+  - `url(https://enlaceweb.aqui)` --> imagen del web
+  - `url(img/jacarandas.jpg)` --> imagen local, usando rutas de archivos relativas
+  
+--
+----
+.right[.morado-claro[ejemplo de `background-image` `r fontawesome::fa("arrow-circle-right")` ]]
+---
+background-image: url(rladies_logo.jpeg)
+
+class: middle, center, inverse
+
+# **background-image**
+***Sin indicar tamaño del fondo***
+---
+class: middle, center
+
+## `r fontawesome::fa("image")` Imagenes
+
+- `background-size:` (_tamaño de la imagen del fondo_)
+--
+----
+.right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]  
+---
+
+
+    - `cover` --> (_cubrir_) cambia la escala y recorta sin que quede espacio en blanco
+    - `contain` --> (_contener_) cambia la escala solamente
+--
+----
+.right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]   
+
+
+---
+class: middle, center
+
+## `r fontawesome::fa("image")` Imagenes
+
+- `background-position:`  (_posición de la imagen del fondo_) [experimenta con esta propiedad](https://css-tricks.com/almanac/properties/b/background-position/)
+
+--
+----
+.right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]
 
 ---
 class: inverse, middle, center
