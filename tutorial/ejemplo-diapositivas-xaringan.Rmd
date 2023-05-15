@@ -89,90 +89,77 @@ background-size: 15%
 #### `r rmarkdown::metadata$date`
 ]
 
-.left[.footnote[RLdaies Theme[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
+.left[.footnote[R-Ladies Theme[R-Ladies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 
 ---
+
 background-image: url(imagenes/rladies_logo.jpeg) 
 background-position: 10% 10%
 background-size: 10%
 class: middle, center
 
-
-# Alinear texto
-
-.left[
-
-### Texto a la izquierda
-
-
-]
-
-.center[
-
-### Texto en el centro
-
-]
-
-.right[
-
-###  Texto a la derecha
-
-]
-
----
-
-class: center, middle
-
-<img src="imagenes/rladies_logo.jpeg"
-width="55px"
-/><br>
-## [R-Ladies Morelia](https://www.meetup.com/es-ES/rladies-morelia/)
-
-
----
-
-class: center, middle
-
-`r fontawesome::fa("laptop-file", height = "3em")`
-# ¿Cómo creamos presentaciones con R?
-
---
-
-----
-
-
-### remark.js
-
---
-
-### xaringan
-
---
-
-### CSS
-
----
-
-## Usar `pull-left` y `pull-right`
-
-----
+# Alinear texto y códigos
 
 .pull-left[
-.center[
-### `r fontawesome::fa("js")`JavaScript
 
-### **y**
+El código quedará alineado a la izquierda.
 
-### `r fontawesome::fa("markdown")` Markdown
-]
+#### Código
+
+````
+```{r plot, echo=TRUE, fig.height=5, fig.show='hide'}`r ''`
+cl <- c("maroon3", "sienna2", "skyblue1")
+
+p <- ggplot(iris, aes(x=Sepal.Length,
+  y=Sepal.Width))+
+  geom_point(aes(colour = Species)) +
+  scale_colour_manual(values=cl)+
+  labs(title = "Longitud y Ancho Sepal",
+       subtitle = "Iris data set",
+       x = "Longitud Sepal",
+       y = "Ancho Sepal",
+       caption = "Datos: Iris data set.`",
+       fill = "Especies")
+p
+```
+````
+
 ]
 
 .pull-right[
-Una herramienta para presentaciones de diapositivas basadas en Markdown a traves de la web.
 
-```{r, echo=FALSE}
-knitr::include_url("https://remarkjs.com", height = "350px")
+El plot quedará alineado a la derecha.
+
+#### Plot
+
+```{r plot2, echo=FALSE, fig.height=5}
+cl <- c("maroon3", "sienna2", "skyblue1")
+
+p <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))+
+  geom_point(aes(colour = Species)) +
+  scale_colour_manual(values=cl)+
+  labs(title = "Longitud y Ancho Sepal",
+       subtitle = "Iris data set",
+       x = "Longitud Sepal",
+       y = "Ancho Sepal",
+       caption = "Datos: Iris data set from `data(iris)`",
+       fill = "Especies")
+p
 ```
-[https://remarkjs.com](https://remarkjs.com)
+
 ]
 
+---
+
+## Incrustar diapositivas
+
+Para incrustar las diapositivas puedes realizar lo siguiente:
+
+```{r, eval=FALSE}
+xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", ratio = "16:9", max_width = 600)
+```
+
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", ratio = "16:9", max_width = 600)
+```

@@ -21,7 +21,7 @@
     <link href="libs/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
     <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"cd4000da845a4b558d49d99b967349c0","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x677f00998154856816a6db7a8da033e","expires":1}</script>
     <script src="libs/himalaya-1.1.0/himalaya.js"></script>
     <script src="libs/js-cookie-3.0.0/js.cookie.js"></script>
     <link href="libs/editable-0.2.6/editable.css" rel="stylesheet" />
@@ -30,6 +30,7 @@
     <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/fitvids-2.1.1/fitvids.min.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="mi-tema.css" type="text/css" />
   </head>
@@ -56,91 +57,69 @@ background-size: 15%
 #### 2023/05/17
 ]
 
-.left[.footnote[RLdaies Theme[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
+.left[.footnote[R-Ladies Theme[R-Ladies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 
 ---
+
 background-image: url(imagenes/rladies_logo.jpeg) 
 background-position: 10% 10%
 background-size: 10%
 class: middle, center
 
-
-# Alinear texto
-
-.left[
-
-### Texto a la izquierda
-
-
-]
-
-.center[
-
-### Texto en el centro
-
-]
-
-.right[
-
-###  Texto a la derecha
-
-]
-
----
-
-class: center, middle
-
-&lt;img src="imagenes/rladies_logo.jpeg"
-width="55px"
-/&gt;&lt;br&gt;
-## [R-Ladies Morelia](https://www.meetup.com/es-ES/rladies-morelia/)
-
-
----
-
-class: center, middle
-
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:3em;width:3.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M192 96C192 113.7 206.3 128 224 128H320V192H288C243.8 192 208 227.8 208 272V384C187.1 384 169.3 397.4 162.7 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H192V96zM240 272C240 245.5 261.5 224 288 224H544C570.5 224 592 245.5 592 272V416H624C632.8 416 640 423.2 640 432V448C640 483.3 611.3 512 576 512H256C220.7 512 192 483.3 192 448V432C192 423.2 199.2 416 208 416H240V272zM304 288V416H528V288H304zM320 96H224V0L320 96z"/></svg>
-# ¿Cómo creamos presentaciones con R?
-
---
-
-----
-
-
-### remark.js
-
---
-
-### xaringan
-
---
-
-### CSS
-
----
-
-## Usar `pull-left` y `pull-right`
-
-----
+# Alinear texto y códigos
 
 .pull-left[
-.center[
-### <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>JavaScript
 
-### **y**
+El código quedará alineado a la izquierda.
 
-### <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg> Markdown
-]
+#### Código
+
+````
+```{r plot, echo=TRUE, fig.height=5, fig.show='hide'}
+cl &lt;- c("maroon3", "sienna2", "skyblue1")
+
+p &lt;- ggplot(iris, aes(x=Sepal.Length,
+  y=Sepal.Width))+
+  geom_point(aes(colour = Species)) +
+  scale_colour_manual(values=cl)+
+  labs(title = "Longitud y Ancho Sepal",
+       subtitle = "Iris data set",
+       x = "Longitud Sepal",
+       y = "Ancho Sepal",
+       caption = "Datos: Iris data set.`",
+       fill = "Especies")
+p
+```
+````
+
 ]
 
 .pull-right[
-Una herramienta para presentaciones de diapositivas basadas en Markdown a traves de la web.
 
-&lt;iframe src="https://remarkjs.com" width="100%" height="350px" data-external="1"&gt;&lt;/iframe&gt;
-[https://remarkjs.com](https://remarkjs.com)
+El plot quedará alineado a la derecha.
+
+#### Plot
+
+![](ejemplo-diapositivas-xaringan_files/figure-html/plot2-1.png)&lt;!-- --&gt;
+
 ]
 
+---
+
+## Incrustar diapositivas
+
+Para incrustar las diapositivas puedes realizar lo siguiente:
+
+
+```r
+xaringanExtra::embed_xaringan(url = "https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html", ratio = "16:9", max_width = 600)
+```
+
+
+<div class="shareagain" style="min-width:300px;margin:1em auto;max-width:600px;" data-exeternal="1">
+<iframe src="https://haydeeperuyero.github.io/Xaringan_RLadies/xaringan.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

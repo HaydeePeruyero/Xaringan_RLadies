@@ -108,7 +108,7 @@ background-size: 15%
 #### `r rmarkdown::metadata$date`
 ]
 
-.left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
+.left[.footnote[R-Ladies Theme[R-Ladies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 
 ---
 background-image: url(imagenes/rladies_logo.jpeg) 
@@ -168,17 +168,17 @@ width="55px"
 
 --
 
-### [`r emo::ji("package")` RLadies](https://www.apreshill.com/project/rladies-xaringan/): Usaremos el [tema de R-Ladies](https://www.apreshill.com/project/rladies-xaringan/)
+#### [`r emo::ji("package")` RLadies](https://www.apreshill.com/project/rladies-xaringan/): Usaremos el [tema de R-Ladies](https://www.apreshill.com/project/rladies-xaringan/)
 
 --
 
 
 
-### [`r emo::ji("package")` xaringan <img src="imagenes/hex-xaringan.png" width="25px"/>](https://github.com/yihui/xaringan#xaringan): Paquete para crear diapositivas con `remarks.js` y R Markdown 
+#### [`r emo::ji("package")` xaringan <img src="imagenes/hex-xaringan.png" width="25px"/>](https://github.com/yihui/xaringan#xaringan): Paquete para crear diapositivas con `remarks.js` y R Markdown 
 
 --
 
-### [`r emo::ji("package")` xaringanExtra](https://github.com/gadenbuie/xaringanExtra/#xaringanExtra): Opciones de edición en línea, incrustar en otro documento, escribir y otras características `r emo::ji("sunglasses")`
+#### [`r emo::ji("package")` xaringanExtra](https://github.com/gadenbuie/xaringanExtra/#xaringanExtra): Opciones de edición en línea, incrustar en otro documento, escribir y otras características `r emo::ji("sunglasses")`
 
 --
 
@@ -583,7 +583,7 @@ background-size: 15%
 .left[.footnote[[RLadies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
 ```
 
-<<<<<<< HEAD
+
 ---
 background-color: var(--quarto)
 
@@ -617,8 +617,6 @@ xaringanExtra::embed_xaringan("Quarto_ejemplos/diapo_titulo.html", max_width = 5
 
 ]
 
-=======
->>>>>>> Fernanda
 ---
 
 background-color: var(--Purple)
