@@ -134,7 +134,7 @@ Estudiante de maestría en Ciencias Biológicas
 
 .center-col[
 
-### `r fontawesome::fa("dna", fill = "#f0ffff")` Fernanda Cidel
+### `r fontawesome::fa("dna", fill = "#181818")` Fernanda Cidel
 
 Estudiante de Lic. en Ecología 
 ENES Morelia, UNAM
@@ -145,7 +145,7 @@ Lab. Genética de la Conservación
 
 .right-col[
 
-### `r fontawesome::fa("circle-nodes", fill = "#f0ffff")` Haydeé
+### `r fontawesome::fa("circle-nodes", fill = "#181818")` Haydeé
 
 Investigadora Posdoctoral en el CCM UNAM
 
