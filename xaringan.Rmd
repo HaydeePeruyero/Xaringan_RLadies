@@ -192,7 +192,7 @@ width="55px"
 class: center, middle
 
 `r fontawesome::fa("laptop-file", height = "3em")`
-# ¿Cómo creamos presentaciones con R?
+# ¿Cómo creamos presentaciones con Rmd?
 
 --
 
@@ -276,28 +276,52 @@ en contenido HTML con .my-red["formato".]
 
 ---
 background-color: var(--quarto)
+class: center, middle
+
+# Otra opción: Quarto 
+
+---
+background-color: var(--quarto)
+
+# Historia 
+
+<br>
+![](imagenes/linea_tiempo.png)
+
+
+---
+background-color: var(--quarto)
 
 # Quarto reveal js
 
 .pull-left[
-  - Quarto es un sistema open-source de publicaciones científicas y técnicas construido a partir de Pandoc.
+- Quarto es un sistema open-source de publicaciones científicas y técnicas construido a partir de Pandoc.
 
 **Ventajas**
   - No depende de un lenguaje de programación en particular 
   - Interfaz de línea de comandos
   - Muchas funciones ya vienen listas para usarse 
-  
+{{content}}
+]
+
+--
+
 **Rmarkdown**
 <img src="imagenes/quarto_rmarkdown.png" width="100%">
 
-]
+--
 .right-up[
 **Quarto**
 <img src="imagenes/quarto_R.png" width="90%">
-<img src="imagenes/quarto_jupyter.png" width="90%">
-<img src="imagenes/quarto_jupyter2.png" width="90%">
-<br>
+{{content}}
 ]
+
+--
+<img src="imagenes/quarto_jupyter.png" width="90%">
+{{content}}
+
+--
+<img src="imagenes/quarto_jupyter2.png" width="90%">
 
 ---
 ### Paquetes necesarios
