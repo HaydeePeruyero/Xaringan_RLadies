@@ -665,6 +665,10 @@ Para definir la **alineación** de los elementos de la diapositiva tenemos varia
 ## Alinear diapositiva entera
 ```{{r}}
 #class: middle, center
+
+#left,izquierda ; center,centro ; right,derecha
+
+#top,arriba ; middle,medio ; bottom,abajo
 ```
 --
 Donde **middle** define la posición vertical y **center** la posición horizontal
@@ -676,19 +680,19 @@ Ubicación de texto
 `r fontawesome::fa("2")`
 
 
-## Alinear solo parte del texto
-
-.left[Abarcamos toda la diapositiva, poniendo una parte del texto en la izquierda]
-
---
-
-.right[Y posteriormente complementamos con texto a la derecha]
-
---
-
+##Alinear solo parte del texto
 ----
 
-.center[También podemos agregar texto en el centro, aunque para esta opción podemos usar solo una de las alineaciones]
+.left[
+Insertamos una parte del texto a la izquierda
+]
+.center[...
+
+]
+--
+.right[
+Pero para usar toda la diapositiva, completamos a la derecha
+]
 
 --
 
@@ -697,7 +701,12 @@ Ubicación de texto
 #.center[Inserta aquí] Añade texto al **centro**
 #.right[Inserta aquí] Añade texto a la **derecha**
 ```
+----
+--
+.center[También podemos agregar texto en el centro, 
+aunque para esta opción podemos usar solo una de las alineaciones]
 ---
+background-color: var(--Purple)
 class: middle, center
 
 Ubicación de texto
@@ -705,62 +714,73 @@ Ubicación de texto
 `r fontawesome::fa("3")`
 
 ## `r fontawesome::fa("table-columns")` Columnas con `pull-left` y `pull-right`
-----
-#Generamos clases para organizar por columnas, donde: 
+--
+
+Generamos clases para organizar por columnas, donde: 
 
 --
 .pull-left[
+
+```{r}
+#.pull-left[Insertas tu texto]
+```
+--
 * Abarca el 47% izquierdo de la diapositiva
+--
+* Puede contener imágenes
 
-* `.pull-left[]` _jalar-izquierda_  
-
-* Puede incluir imagenes
-
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
+<img src="imagenes/rladies_logo.jpeg" width="25%"
+alt="logo-rladies"/>
 ]
 --
 .pull-right[
 * No es obligatorio ser complementado a la derecha
 
-* `.pull-right[]` _jalar-derecha_ 
+```{r}
+#.pull-right[Insertas tu texto]
+```
 
 * Abarca el otro 47%
 ]
 --
 ----
-.center[.morado-claro[Y puede incluir otras alineaciones `r emo::ji("smile")`]]
+.center[.morado-claro[Puede incluir otras alineaciones y no se empalma `r emo::ji("smile")`]
+]
 
 ---
-background-color: var(--Purple)
 class: middle, center
 
 Ubicación de texto
 `r fontawesome::fa("4")`
 
 ## `r fontawesome::fa("table-columns")` Columnas con `left-column` y `right-column`
-
+----
+--
 Divide el texto de la diapositiva en dos columnas
 
 --
 
 .left-column[
-* **`.left-column[]` _columna-izquierda_ coloca  una columna a la izquierda**
+
+```{r}
+#.left-column[] coloca  una columna a la _izquierda_
+```
 
 * Tiene un 20% de ancho de la diapositiva
 
-* Y el texto es un poco más claro.
+* **Y el texto es un poco más claro**
 ]
 
 -- 
 .right-column[
-* **`.right-column[]` _columna-derecha_ coloca la columna derecha
+```{r}
+#.right-column[]` _columna-derecha_ coloca la columna derecha
+```
+   Tiene un 75% de ancho de la diapositiva
 
-* Tiene un 75% de ancho de la diapositiva
 
-- Tambien tiene un _poquito_ de relleno por arriba
-
-- Estan fijas para la diapositiva entera
-
+.center[Estan fijas para la diapositiva entera
+]
 --
 ----
 
@@ -780,11 +800,9 @@ Ubicación de texto
 
 background-color: var(--quarto)
 
-# Quarto revealjs: alineación 
-
-```{r, echo=FALSE}
+# Quarto revealjs: alineación```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("Quarto_ejemplos/alineacion.html", max_width = 900)
-```
+
 
 ---
 
@@ -818,7 +836,8 @@ Existen tres formas de poner imágenes en una diapositiva.
 ]
 .pull-right[
 
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
+<img src="imagenes/rladies_logo.jpeg" width="25%"
+alt="logo-rladies"/>
 
 ]
 
@@ -874,22 +893,29 @@ alt="logo-rladies"/>
 .pull-right[
 <img src="imagenes/rladies_logo.jpeg" width="75%"/>
 ]
-
-
-
 ---
 class: middle, center
 
 ## `r fontawesome::fa("image")` Imagenes
 
 También hay varias formas de seleccionar una imagen de fondo.
-
-- `background-image:` (_imagen del fondo_)
 ----
   - `url(https://enlaceweb.aqui)` --> imagen del web
   - `url(img/jacarandas.jpg)` --> imagen local, usando rutas de archivos relativas
   
 --
+---
+
+background-image:<img src="imagenes/rladies_logo.jpeg">
+class: middle, center
+
+# **background-image"**
+**sin indicar tamaño**
+
+```{r}
+#background-image:<img src="imagenes/rladies_logo.jpeg">
+```
+
 ----
 .right[.morado-claro[ejemplo de `background-image` `r fontawesome::fa("arrow-circle-right")` ]]
 ---
@@ -1016,9 +1042,7 @@ p
 
 .pull-right[
 
-#### Plot
-
-```{r plot2, echo=FALSE, fig.height=5}
+#### Plot```{r plot2, echo=FALSE, fig.height=5}
 cl <- c("maroon3", "sienna2", "skyblue1")
 
 p <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))+
