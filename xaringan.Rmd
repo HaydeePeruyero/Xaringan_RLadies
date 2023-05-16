@@ -662,7 +662,7 @@ Para definir la **alineación** de los elementos de la diapositiva tenemos varia
 
 `r fontawesome::fa("1")`
 
-## Alinear diapositiva entera
+### Alinear diapositiva entera
 ```{{r}}
 #class: middle, center
 
@@ -675,12 +675,11 @@ Donde **middle** define la posición vertical y **center** la posición horizont
 
 ---
 class: middle, center
-Ubicación de texto
+# Ubicación de texto 
 
 `r fontawesome::fa("2")`
 
-
-##Alinear solo parte del texto
+### Alinear solo parte del texto
 ----
 
 .left[
@@ -702,37 +701,43 @@ Pero para usar toda la diapositiva, completamos a la derecha
 #.right[Inserta aquí] Añade texto a la **derecha**
 ```
 ----
+
 --
 .center[También podemos agregar texto en el centro, 
 aunque para esta opción podemos usar solo una de las alineaciones]
+
 ---
 background-color: var(--Purple)
 class: middle, center
 
-Ubicación de texto
+# Ubicación de texto 
 
 `r fontawesome::fa("3")`
 
-## `r fontawesome::fa("table-columns")` Columnas con `pull-left` y `pull-right`
+### `r fontawesome::fa("table-columns")` Columnas con `pull-left` y `pull-right`
 --
 
 Generamos clases para organizar por columnas, donde: 
 
 --
-.pull-left[
 
-```{r}
+.pull-left[
+```{r eval=FALSE}
 #.pull-left[Insertas tu texto]
 ```
---
+
 * Abarca el 47% izquierdo de la diapositiva
+
+{{content}}
+]
+
 --
 * Puede contener imágenes
 
-<img src="imagenes/rladies_logo.jpeg" width="25%"
-alt="logo-rladies"/>
-]
+<img src="imagenes/rladies_logo.jpeg" width="25%" alt="logo-rladies"/>
+
 --
+
 .pull-right[
 * No es obligatorio ser complementado a la derecha
 
@@ -742,7 +747,9 @@ alt="logo-rladies"/>
 
 * Abarca el otro 47%
 ]
+
 --
+
 ----
 .center[.morado-claro[Puede incluir otras alineaciones y no se empalma `r emo::ji("smile")`]
 ]
@@ -750,19 +757,21 @@ alt="logo-rladies"/>
 ---
 class: middle, center
 
-Ubicación de texto
+# Ubicación de texto 
+
 `r fontawesome::fa("4")`
 
-## `r fontawesome::fa("table-columns")` Columnas con `left-column` y `right-column`
+### `r fontawesome::fa("table-columns")` Columnas con `left-column` y `right-column`
+
 ----
+
 --
 Divide el texto de la diapositiva en dos columnas
 
 --
-
 .left-column[
 
-```{r}
+```{r eval=FALSE}
 #.left-column[] coloca  una columna a la _izquierda_
 ```
 
@@ -771,26 +780,32 @@ Divide el texto de la diapositiva en dos columnas
 * **Y el texto es un poco más claro**
 ]
 
--- 
+--
+
 .right-column[
-```{r}
+```{r eval=FALSE}
 #.right-column[]` _columna-derecha_ coloca la columna derecha
 ```
-   Tiene un 75% de ancho de la diapositiva
 
-
-.center[Estan fijas para la diapositiva entera
+- Tiene un 75% de ancho de la diapositiva
+{{content}}
 ]
 --
+
+- Estan fijas para la diapositiva entera
+--
+
+.no-col-center-bottom[
+
 ----
 
-.center[Estas clases de columnas estan diseñadas para usarse juntas
-]
+Estas clases de columnas estan diseñadas para usarse juntas
 
+]
 
 ---
 class: middle, center
-Ubicación de texto
+# Ubicación de texto
 
 ## `r fontawesome::fa("table-columns")` Columnas con clase `css`
 
@@ -800,9 +815,11 @@ Ubicación de texto
 
 background-color: var(--quarto)
 
-# Quarto revealjs: alineación```{r, echo=FALSE}
-xaringanExtra::embed_xaringan("Quarto_ejemplos/alineacion.html", max_width = 900)
+# Quarto revealjs: alineación
 
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("Quarto_ejemplos/alineacion.html", max_width = 900)
+```
 
 ---
 
@@ -863,8 +880,7 @@ knitr::include_graphics("imagenes/rladies_logo.jpeg")
 ]
 .pull-right[
 
-
-```{r imagen-knitr, fig.dim=c(5,3), fig.cap="Logo de R-Ladies Morelia", fig.alt="Logo de R-Ladies Morelia"}
+```{r imagen-knitr, fig.dim=c(3,2), fig.cap="Logo de R-Ladies Morelia", fig.alt="Logo de R-Ladies Morelia"}
 knitr::include_graphics("imagenes/rladies_logo.jpeg")
 ```
 
@@ -899,49 +915,64 @@ class: middle, center
 ## `r fontawesome::fa("image")` Imagenes
 
 También hay varias formas de seleccionar una imagen de fondo.
+
 ----
+
   - `url(https://enlaceweb.aqui)` --> imagen del web
   - `url(img/jacarandas.jpg)` --> imagen local, usando rutas de archivos relativas
   
---
 ---
 
-background-image:<img src="imagenes/rladies_logo.jpeg">
 class: middle, center
 
-# **background-image"**
+# **"background-image"**
 **sin indicar tamaño**
 
-```{r}
-#background-image:<img src="imagenes/rladies_logo.jpeg">
+```{r eval= FALSE}
+background-image: url("imagenes/rladies_logo.jpeg")
 ```
 
 ----
-.right[.morado-claro[ejemplo de `background-image` `r fontawesome::fa("arrow-circle-right")` ]]
----
-background-image: url(rladies_logo.jpeg)
 
+.right[.morado-claro[ejemplo de `background-image` `r fontawesome::fa("arrow-circle-right")` ]]
+
+---
+background-image: url("imagenes/rladies_logo.jpeg")
 class: middle, center, inverse
 
-# **background-image**
-***Sin indicar tamaño del fondo***
+
 ---
 class: middle, center
 
 ## `r fontawesome::fa("image")` Imagenes
 
+**Opciones:**
+
+--
+
 - `background-size:` (_tamaño de la imagen del fondo_)
---
-----
-.right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]  
----
 
-
-    - `cover` --> (_cubrir_) cambia la escala y recorta sin que quede espacio en blanco
-    - `contain` --> (_contener_) cambia la escala solamente
 --
+- `cover` --> (_cubrir_) cambia la escala y recorta sin que quede espacio en blanco
+
+--
+- `contain` --> (_contener_) cambia la escala solamente
+
+--
+
 ----
 .right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]   
+
+---
+background-image: url("imagenes/rladies_logo.jpeg")
+background-size: cover
+class: inverse
+
+
+---
+background-image: url("imagenes/rladies_logo_v.jpeg")
+background-size: contain
+class: inverse
 
 
 ---
@@ -951,9 +982,19 @@ class: middle, center
 
 - `background-position:`  (_posición de la imagen del fondo_) [experimenta con esta propiedad](https://css-tricks.com/almanac/properties/b/background-position/)
 
---
 ----
 .right[.morado-claro[ejemplo de `background-size` `r fontawesome::fa("arrow-circle-right")` ]]
+
+---
+background-image: url("imagenes/rladies_logo.jpeg")
+background-position: left
+class: inverse
+
+
+---
+background-image: url("imagenes/rladies_logo.jpeg")
+background-position: right
+class: inverse
 
 ---
 class: inverse, middle, center
