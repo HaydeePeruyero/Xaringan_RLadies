@@ -727,7 +727,6 @@ Generamos clases para organizar por columnas, donde:
 ```
 
 
-
 * Abarca el 47% izquierdo de la diapositiva
 
 {{content}}
@@ -978,8 +977,9 @@ class: inverse
 ---
 background-image: url("imagenes/rladies_logo_v.jpeg")
 background-size: contain
-class: inverse
+class: inverse, center
 
+.content-box-red[Está vertical para que no coincidiera con las dimensiones de la diapositiva]
 
 ---
 class: middle, center
