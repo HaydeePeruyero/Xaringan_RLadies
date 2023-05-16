@@ -700,8 +700,8 @@ Generamos clases para organizar por columnas, donde:
 ```{r}
 #.pull-left[Insertas tu texto]
 ```
---
-* Abarca el 47% izquierdo de la diapositiva
+
+* **Abarca el 47% izquierdo de la diapositiva**
 --
 * Puede contener imágenes
 
@@ -712,6 +712,7 @@ alt="logo-rladies"/>
 .pull-right[
 * No es obligatorio ser complementado a la derecha
 
+--
 ```{r}
 #.pull-right[Insertas tu texto]
 ```
@@ -760,7 +761,7 @@ Divide el texto de la diapositiva en dos columnas
 --
 ----
 
-.center[Estas clases de columnas estan diseñadas para usarse juntas
+.center[**Estas clases de columnas estan diseñadas para usarse juntas**
 ]
 
 
