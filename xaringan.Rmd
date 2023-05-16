@@ -800,12 +800,8 @@ Divide el texto de la diapositiva en dos columnas
 
 ----
 
-<<<<<<< HEAD
-.center[**Estas clases de columnas estan diseñadas para usarse juntas**
-]
-=======
 Estas clases de columnas estan diseñadas para usarse juntas
->>>>>>> origin
+
 
 ]
 
@@ -978,8 +974,9 @@ class: inverse
 ---
 background-image: url("imagenes/rladies_logo_v.jpeg")
 background-size: contain
-class: inverse
+class: inverse, center
 
+.content-box-red[Está vertical para que no coincidiera con las dimensiones de la diapositiva]
 
 ---
 class: middle, center
