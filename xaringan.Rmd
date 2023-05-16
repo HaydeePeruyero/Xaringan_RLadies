@@ -701,7 +701,7 @@ Generamos clases para organizar por columnas, donde:
 #.pull-left[Insertas tu texto]
 ```
 
-* **Abarca el 47% izquierdo de la diapositiva**
+* Abarca el 47% izquierdo de la diapositiva
 --
 * Puede contener imágenes
 
