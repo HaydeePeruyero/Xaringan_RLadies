@@ -1,6 +1,6 @@
 ---
 title: "Presentaciones"
-subtitle: "⚔<br/>con xaringan"
+subtitle: "⚔<br/>con xaringan y Quarto revealjs"
 author: "Fernanda, Sofía, Haydeé"
 institute: "R-Ladies Morelia"
 date: "2023/05/16"
@@ -286,9 +286,11 @@ background-color: var(--quarto)
 # Historia 
 
 <br>
-![](imagenes/linea_tiempo.png)
+![](imagenes/linea_tiempo.png)<sup>1</sup>
 
-
+.footnote[
+[1] [Giorgi et al., 2020](https://www.mdpi.com/2075-1729/12/5/648)
+]
 ---
 background-color: var(--quarto)
 
