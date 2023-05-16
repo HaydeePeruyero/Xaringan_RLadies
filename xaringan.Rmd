@@ -654,19 +654,13 @@ Ubicación de texto
 `r fontawesome::fa("2")`
 
 
-## Alinear solo parte del texto
-
-.left[Abarcamos toda la diapositiva, poniendo una parte del texto en la izquierda]
-
---
-
-.right[Y posteriormente complementamos con texto a la derecha]
-
+##Alinear solo parte del texto
 --
 
 ----
 
-.center[También podemos agregar texto en el centro, aunque para esta opción podemos usar solo una de las alineaciones]
+.center[También podemos agregar texto en el centro, 
+aunque para esta opción podemos usar solo una de las alineaciones]
 
 --
 
@@ -683,18 +677,19 @@ Ubicación de texto
 `r fontawesome::fa("3")`
 
 ## `r fontawesome::fa("table-columns")` Columnas con `pull-left` y `pull-right`
-----
-#Generamos clases para organizar por columnas, donde: 
+-
+--
+
+Generamos clases para organizar por columnas, donde: 
 
 --
 .pull-left[
 * Abarca el 47% izquierdo de la diapositiva
 
-* `.pull-left[]` _jalar-izquierda_  
+* Puede contener imágenes
 
-* Puede incluir imagenes
-
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
+<img src="imagenes/rladies_logo.jpeg" width="25%"
+alt="logo-rladies"/>
 ]
 --
 .pull-right[
@@ -796,7 +791,8 @@ Existen tres formas de poner imágenes en una diapositiva.
 ]
 .pull-right[
 
-![Logo de RLadies](imagenes/rladies_logo.jpeg)
+<img src="imagenes/rladies_logo.jpeg" width="25%"
+alt="logo-rladies"/>
 
 ]
 
