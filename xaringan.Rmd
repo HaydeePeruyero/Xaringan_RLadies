@@ -1089,7 +1089,9 @@ p
 
 .pull-right[
 
-#### Plot```{r plot2, echo=FALSE, fig.height=5}
+#### Plot
+
+```{r plot2, echo=FALSE, fig.height=5}
 cl <- c("maroon3", "sienna2", "skyblue1")
 
 p <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))+
