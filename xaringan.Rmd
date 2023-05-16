@@ -977,7 +977,7 @@ class: inverse
 ---
 background-image: url("imagenes/rladies_logo_v.jpeg")
 background-size: contain
-class: inverse, center
+class: inverse, center, middle
 
 .content-box-red[Está vertical para que no coincidiera con las dimensiones de la diapositiva]
 

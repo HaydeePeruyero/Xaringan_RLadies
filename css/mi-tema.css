@@ -228,7 +228,8 @@ hr {
 .content-box-army {	background-color: #737a36; }
 .content-box-green { background-color: #d9edc2; }
 .content-box-purple { background-color: #e2e2f9; }
-.content-box-red { background-color: #ffcccc; }
+.content-box-red { background-color: #ffcccc;
+color: var(--Black);}
 .content-box-yellow { background-color: #fef5c4; }
 .content-box-blue .remark-inline-code,
 .content-box-blue .remark-inline-code,
