@@ -3,7 +3,7 @@ title: "Presentaciones"
 subtitle: "⚔<br/>con xaringan"
 author: "Fernanda, Sofía, Haydeé"
 institute: "R-Ladies Morelia"
-date: "2023/05/17"
+date: "2023/05/16"
 output:
   xaringan::moon_reader:
     css: 
